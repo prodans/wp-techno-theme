@@ -5,14 +5,20 @@ $btn-font-size: 0.9rem;
 @import "../../../node_modules/bootstrap/scss/buttons";
 
 .btn {
-	min-width: 11.5rem;
-	min-height: 2.5rem;
+  min-width: 11.5rem;
+  min-height: 2.5rem;
 }
 
 .btn-primary {
-	color: $white;
+  color: $white;
 
-	&:hover {
-		color: $white;
-	}
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+  }
+
+  &.pulse:hover {
+    animation: pulse-primary 1s .1s ease infinite forwards;
+  }
 }

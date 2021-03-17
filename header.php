@@ -15,15 +15,15 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ti ti-bars"></i>
+        </button>
         <a class="navbar-brand" href="<?= get_home_url(); ?>">
             <img src="<?= get_template_directory_uri() . '/assets/images/logo.png' ?>"
                  alt="<?php bloginfo( 'name' ); ?>"
             />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <a class="location mx-auto" href="#">
             <i class="ti ti-location"></i>
             <span>Черновцы</span>
@@ -33,7 +33,7 @@
             'depth' => 1,
             'menu_class' => 'navbar-nav',
             'container_id' => 'navbar-main',
-            'container_class' => 'collapse navbar-collapse flex-grow-0',
+            'container_class' => 'navbar-collapse collapse flex-grow-0',
             'fallback_cb' => 'BS5_Walker_Nav_menu::fallback',
             'walker' => new BS5_Walker_Nav_menu()
         ]) ?>
@@ -41,6 +41,6 @@
             <span class="email">iiifo@telmobudseivis.com.ua</span>
             <span class="phone">+38 050 718 72 06</span>
         </div>
-        <button class="btn btn-primary"><i class="ti ti-phone"></i>Обратный звонок</button>
+        <button class="btn btn-primary"><i class="ti ti-phone"></i><span>Обратный звонок</span></button>
     </nav>
 </header>

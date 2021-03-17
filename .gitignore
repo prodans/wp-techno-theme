@@ -2,4 +2,5 @@
 node_modules
 vendor
 assets/css
+assets/scss/_icons.scss
 assets/fonts/TechnoIcons.*

@@ -5,6 +5,15 @@ $dark: #273b48;
 
 $font-size-root: 20px;
 
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1536px
+);
+
 @import "../../../node_modules/bootstrap/scss/variables";
 
 $font-family-base: Montserrat, $font-family-base;

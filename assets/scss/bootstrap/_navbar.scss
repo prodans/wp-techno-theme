@@ -24,3 +24,19 @@ $navbar-dark-hover-font-weight: 700;
 		font-weight: $navbar-dark-active-font-weight;
 	}
 }
+
+.navbar-toggler {
+  border: none;
+  margin-right: 1rem;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
