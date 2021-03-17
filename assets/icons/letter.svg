@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="128"
+   height="128"
+   version="1.0"
+   shape-rendering="geometricPrecision"
+   text-rendering="geometricPrecision"
+   image-rendering="optimizeQuality"
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   viewBox="0 0 128 128"
+   id="svg1035"
+   sodipodi:docname="letter.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"><metadata
+   id="metadata1041"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs1039" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1027"
+   id="namedview1037"
+   showgrid="false"
+   units="px"
+   inkscape:zoom="0.35553386"
+   inkscape:cx="-642.0766"
+   inkscape:cy="352.68386"
+   inkscape:window-x="-8"
+   inkscape:window-y="22"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg1035" />
+ <g
+   id="Слой_x0020_1"
+   style="fill:#000000"
+   transform="matrix(0.29852139,0,0,0.29852139,0.00298441,0.00559647)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <g
+   id="_2828717480656"
+   style="fill:#000000">
+   <path
+   fill="#292525"
+   fill-rule="nonzero"
+   d="m 237.9,30.39 v 170.78 c 0,11.01 -8.95,19.96 -19.96,19.96 h -68.6 l 24.83,-24.83 c 3.27,-3.27 3.27,-8.57 0,-11.84 -3.27,-3.27 -8.57,-3.27 -11.84,0 l -36.68,36.68 h -24.4 l 75.71,-75.71 c 3.27,-3.27 3.27,-8.57 0,-11.84 -3.27,-3.27 -8.57,-3.27 -11.84,0 L 77.57,221.14 H 47.16 L 237.9,30.4 Z M 34.2,237.88 h 145.41 v 156.4 c -2.94,-0.93 -5.7,-2.55 -8.03,-4.88 L 39.35,257.17 c -5.22,-5.22 -6.92,-12.63 -5.14,-19.29 z m 165.6,151.53 c -1.06,1.07 -2.23,1.97 -3.45,2.74 V 237.88 h 21.58 c 20.24,0 36.71,-16.47 36.71,-36.71 v -21.58 h 95.99 l -48.46,48.46 c -1.64,1.63 -2.45,3.78 -2.45,5.92 0,2.14 0.82,4.29 2.45,5.92 3.27,3.27 8.57,3.27 11.84,0 l 60.3,-60.3 c 0,0 0,0 0.01,-0.01 h 34.61 c -0.78,1.23 -1.7,2.39 -2.76,3.45 L 199.8,389.4 Z m 206.37,-234.6 v 0 c 2.29,2.29 3.95,5.03 4.9,8.03 H 254.64 V 17.43 c 6.66,-1.78 14.07,-0.08 19.29,5.14 z M 233.86,10.73 27.49,217.1 c -7.16,7.16 -10.73,16.56 -10.73,25.96 0,9.4 3.58,18.8 10.73,25.96 l 33.18,33.18 -36.43,36.43 c -1.64,1.64 -2.45,3.78 -2.45,5.92 0,2.14 0.82,4.29 2.45,5.92 3.27,3.27 8.57,3.27 11.84,0 l 36.43,-36.43 15.17,15.18 -85.24,85.24 c -1.64,1.64 -2.45,3.78 -2.45,5.92 0,2.14 0.82,4.29 2.45,5.92 3.27,3.27 8.57,3.27 11.84,0 l 85.25,-85.25 60.2,60.2 c 14.31,14.31 37.6,14.31 51.92,0 L 418.02,194.88 c 6.93,-6.93 10.75,-16.15 10.75,-25.96 0,-9.81 -3.82,-19.03 -10.75,-25.96 v 0 L 285.78,10.72 C 278.63,3.57 269.24,-0.01 259.84,-0.01 h -0.04 c -9.39,0 -18.79,3.58 -25.94,10.73 z"
+   id="path1025"
+   style="fill:#000000" />
+   <path
+   fill="#292525"
+   fill-rule="nonzero"
+   d="m 197.46,113.09 c 1.56,1.56 2.45,3.71 2.45,5.92 0,2.2 -0.9,4.36 -2.45,5.92 -1.56,1.56 -3.72,2.45 -5.92,2.45 -2.21,0 -4.36,-0.9 -5.92,-2.45 -1.56,-1.56 -2.45,-3.72 -2.45,-5.92 0,-2.21 0.9,-4.36 2.45,-5.92 1.56,-1.56 3.71,-2.45 5.92,-2.45 2.2,0 4.36,0.89 5.92,2.45 z"
+   id="path1027"
+   style="fill:#000000" />
+   <path
+   fill="#292525"
+   fill-rule="nonzero"
+   d="m 16.78,366.31 c 0,2.2 -0.89,4.36 -2.45,5.92 -1.56,1.56 -3.71,2.45 -5.92,2.45 -2.2,0 -4.36,-0.9 -5.92,-2.45 -1.56,-1.56 -2.45,-3.72 -2.45,-5.92 0,-2.2 0.9,-4.36 2.45,-5.92 1.56,-1.56 3.72,-2.45 5.92,-2.45 2.2,0 4.36,0.9 5.92,2.45 1.56,1.56 2.45,3.72 2.45,5.92 z"
+   id="path1029"
+   style="fill:#000000" />
+   <path
+   fill="#292525"
+   fill-rule="nonzero"
+   d="m 54.04,420.38 c 0,-2.14 0.82,-4.29 2.45,-5.92 l 38.03,-38.03 c 3.27,-3.27 8.57,-3.27 11.84,0 3.27,3.27 3.27,8.57 0,11.84 L 68.33,426.3 c -3.27,3.27 -8.57,3.27 -11.84,0 -1.64,-1.64 -2.45,-3.78 -2.45,-5.92 z"
+   id="path1031"
+   style="fill:#000000" />
+  </g>
+ </g>
+</svg>

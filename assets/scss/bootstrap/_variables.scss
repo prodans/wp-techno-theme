@@ -1,0 +1,18 @@
+$variable-prefix: t-;
+
+$primary: #379df4;
+$dark: #273b48;
+
+$font-size-root: 20px;
+
+@import "../../../node_modules/bootstrap/scss/variables";
+
+$font-family-base: Montserrat, $font-family-base;
+
+/* Colors */
+$bg-color: #fff;
+$fg-color: #273b48;
+$primary-color: #379df4;
+$accent-color: #f44437;
+$black-color: #323232;
+$grey-color: #8a8a8a;

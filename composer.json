@@ -1,0 +1,20 @@
+{
+  "name": "techno/theme",
+  "description": "Techno Theme",
+  "type": "project",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Vadim Prodan",
+      "email": "vprodan@pm.me"
+    }
+  ],
+  "require": {
+    "cmb2/cmb2": "^v2.9.0"
+  },
+  "autoload": {
+    "files": [
+      "vendor/cmb2/cmb2/init.php"
+    ]
+  }
+}

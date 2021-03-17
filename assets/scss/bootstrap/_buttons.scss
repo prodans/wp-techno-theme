@@ -1,0 +1,18 @@
+$btn-border-radius: 1.25rem;
+$btn-font-weight: 700;
+$btn-font-size: 0.9rem;
+
+@import "../../../node_modules/bootstrap/scss/buttons";
+
+.btn {
+	min-width: 11.5rem;
+	min-height: 2.5rem;
+}
+
+.btn-primary {
+	color: $white;
+
+	&:hover {
+		color: $white;
+	}
+}

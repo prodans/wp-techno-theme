@@ -1,0 +1,37 @@
+{
+  "name": "techno",
+  "version": "1.0.0",
+  "description": "Techno Theme",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": {
+    "name": "Vadim Prodan",
+    "email": "vprodan@pm.me"
+  },
+  "license": "proprietary",
+  "devDependencies": {
+    "@wordpress/browserslist-config": "^3.0.1",
+    "bootstrap": "^5.0.0-beta2",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-iconfont": "^11.0.0",
+    "gulp-iconfont-css": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
+}

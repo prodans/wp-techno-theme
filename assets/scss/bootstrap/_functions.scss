@@ -1,0 +1,7 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+
+@function map-only($map, $keys...) {
+  $keys: map-keys(map-remove($map, $keys...));
+
+  @return map-remove($map, $keys...);
+}
