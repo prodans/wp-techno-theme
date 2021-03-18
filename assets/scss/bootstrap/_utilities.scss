@@ -10,7 +10,8 @@ $utilities: map-only(
         margin-end,
         flex-grow,
         font-weight,
-        color
+        color,
+        flex-wrap
 );
 
 @import "../../../node_modules/bootstrap/scss/utilities/api";

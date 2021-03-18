@@ -1,58 +1,94 @@
-.sidebar li {
-  margin-bottom: 0.05rem;
-  height: 3rem;
-  padding-left: 1.15rem;
-  padding-top: 0.85rem;
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import '../../node_modules/bootstrap/scss/mixins';
+
+.photo {
+  margin-left: 2rem;
+  max-width: 22.05rem;
+  max-height: 32.6rem;
+  margin-right: 4.95rem;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.links {
+  display: block;
+
+  ul span {
+    padding-left: 1.1rem;
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  margin-top: 0.95rem;
+  flex: 1;
+
+  .quotation {
+    max-width: 30.1rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .ti-quote {
+    font-size: 3rem;
+    color: #c3e1fc;
+
+    &:first-child {
+      margin-right: 1.9rem;
+      line-height: 3rem;
+    }
+
+    &:last-child {
+      margin-left: 2rem;
+      margin-top: 3.6rem;
+    }
+  }
 }
 
 .sidebar {
-  width: 20rem;
+  min-width: 20rem;
   font-size: 0.9rem;
+
+  li {
+    margin-bottom: 0.05rem;
+    height: 3rem;
+    padding: 0.85rem 1.15rem;
+  }
 }
 
-.icons {
-  width: 1.15rem;
-  height: 1.35rem;
+@include media-breakpoint-down(xxl) {
+  .links {
+    display: none;
+  }
 }
 
-.p-l {
-  padding-left: 1.1rem;
+@include media-breakpoint-down(lg) {
+  .photo {
+    img {
+      max-width: 16rem;
+    }
+  }
+
+  .text {
+    .ti-quote {
+      font-size: 2rem;
+    }
+
+    .ti-quote:last-child {
+      margin-top: 5.5rem;
+    }
+  }
 }
 
-.div-photo {
-  margin-left: 2rem;
-  width: 22.05rem;
-  height: 32.6rem;
-  margin-right: 4.95rem;
-}
-
-.obj-fit {
-  object-fit: contain;
-}
-
-.container-text {
-  margin-top: 0.95rem;
-}
-
-.quotetion {
-  width: 30.1rem;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.quote {
-  font-size: 3rem;
-  color: #c3e1fc;
-}
-
-.quote-l {
-  padding-right: 1.9rem;
-  line-height: 3rem;
-}
-
-.quote-r {
-  padding-left: 2rem;
-  padding-top: 3.6rem;
+@include media-breakpoint-down(md) {
+  .text {
+    .ti-quote:last-child {
+      margin-top: 18rem;
+    }
+  }
 }
