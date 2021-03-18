@@ -1,0 +1,54 @@
+$header-height: 6rem;
+
+header {
+  height: $header-height;
+
+  nav {
+    height: $header-height;
+
+    .location {
+      font-weight: 600;
+      text-decoration: none;
+      color: $white;
+
+      span {
+        text-decoration: $link-decoration;
+      }
+
+      i {
+        vertical-align: middle;
+      }
+    }
+
+    .contacts {
+      font-weight: 600;
+      color: $white;
+
+      .email {
+        font-size: 0.7rem;
+      }
+
+      .phone {
+        font-size: 1.2rem;
+      }
+    }
+
+    .btn-primary {
+      &:hover {
+        &:hover {
+          animation: pulse-primary 1s .1s ease infinite forwards;
+        }
+
+        i {
+          animation: shake .4s ease-out;
+        }
+      }
+
+      i {
+        display: inline-block;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+      }
+    }
+  }
+}
