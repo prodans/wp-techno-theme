@@ -18,7 +18,7 @@ get_header();
     <div class="section">Some section</div>
     <div id="news-and-promotions" class="section">
         <div class="container d-flex flex-column">
-            <h1>Новости и акции</h1>
+            <h1 class="fw-bold">Новости и акции</h1>
             <ul class="d-flex">
                 <li class="item">
                     <img src="" alt="">

@@ -17,8 +17,4 @@ $btn-font-size: 0.9rem;
   &:active {
     color: $white;
   }
-
-  &.pulse:hover {
-    animation: pulse-primary 1s .1s ease infinite forwards;
-  }
 }
