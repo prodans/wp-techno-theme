@@ -2,6 +2,13 @@
 @import "bootstrap/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
+.main-div {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding-bottom: 34rem
+}
+
 ul {
   list-style: none;
 }
@@ -35,14 +42,16 @@ ul {
 
 .btn {
   margin-top: 4rem;
-  margin-bottom: 34rem;
-  width: 18.5rem;
   font-weight: unset !important;
 }
 
 @include media-breakpoint-down(xxl) {
   .text {
     margin: 1rem;
+  }
+
+  .main-div {
+    padding-bottom: 20rem;
   }
 }
 
@@ -56,6 +65,10 @@ ul {
   .photo {
     margin: 0;
     width: 100%;
+  }
+
+  .main-div {
+    padding-bottom: 8rem;
   }
 }
 
