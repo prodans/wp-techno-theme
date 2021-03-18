@@ -14,6 +14,7 @@
     .item {
       margin-bottom: 2.6rem;
       background-color: #f1f4f7;
+      height: 12.5rem;
 
       .photo {
         width: 19rem;
@@ -51,6 +52,10 @@
 
      .text {
        margin: 1rem !important;
+     }
+
+     .item {
+       height: unset !important;
      }
   }
 }
