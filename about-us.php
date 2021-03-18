@@ -5,6 +5,8 @@
 wp_enqueue_style( 'about-us', get_template_directory_uri() . '/assets/css/about-us.min.css' );
 
 get_header();
+
+// TODO: zafixi sidebar, meow
 ?>
 
   <div class="container d-flex flex-wrap">
