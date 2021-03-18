@@ -45,7 +45,7 @@
 
     &:last-child {
       margin-left: 2rem;
-      margin-top: 3.6rem;
+      margin-top: auto;
     }
   }
 }
@@ -78,17 +78,6 @@
     .ti-quote {
       font-size: 2rem;
     }
-
-    .ti-quote:last-child {
-      margin-top: 5.5rem;
-    }
   }
 }
 
-@include media-breakpoint-down(md) {
-  .text {
-    .ti-quote:last-child {
-      margin-top: 18rem;
-    }
-  }
-}
