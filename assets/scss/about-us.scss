@@ -4,12 +4,11 @@
 
 .photo {
   margin-left: 2rem;
-  max-width: 22.05rem;
-  max-height: 32.6rem;
+  width: 22rem;
   margin-right: 4.95rem;
 
   img {
-    object-fit: contain;
+    width: 100%;
   }
 }
 
@@ -31,6 +30,7 @@
     line-height: 1.7rem;
     font-style: italic;
     font-weight: bold;
+    margin-top: 1.25rem;
   }
 
   .author {
@@ -72,9 +72,8 @@
 
 @include media-breakpoint-down(lg) {
   .photo {
-    img {
-      max-width: 16rem;
-    }
+      margin: 0;
+      width: 100%;
   }
 
   .text {
