@@ -1,15 +1,16 @@
 @import "../../../node_modules/bootstrap/scss/utilities";
 
 $utilities: map-only(
-								$utilities,
-								display,
-								background-color,
-								align,
-								flex-direction,
-								margin-x,
-								margin-end,
-								flex-grow,
-								font-weight
+        $utilities,
+        display,
+        background-color,
+        align,
+        flex-direction,
+        margin-x,
+        margin-end,
+        flex-grow,
+        font-weight,
+        color
 );
 
 @import "../../../node_modules/bootstrap/scss/utilities/api";

@@ -1,0 +1,12 @@
+.ti:before {
+  display: inline-block;
+}
+
+$ti-rotates: (90, 180, 270);
+
+@each $value in $ti-rotates {
+  .ti-rotate-#{$value}:before {
+    transform: rotate(#{$value}deg);
+  }
+}
+
