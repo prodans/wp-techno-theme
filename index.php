@@ -20,18 +20,18 @@ get_header();
     <div id="news-and-promotions" class="section">
       <div class="container d-flex flex-column">
         <h1 class="fw-bold text-primary">Новости и акции</h1>
-        <ul class="d-flex">
-          <li class="item">
+        <ul class="d-flex list-unstyled">
+          <li class="d-flex flex-column item">
             <img src="" alt="">
             <span>19.09.2020</span>
             <span>Сдача ЖК "Европейский квартал" в г. Черновцы</span>
           </li>
-          <li class="item">
+          <li class="d-flex flex-column item">
             <img src="" alt="">
             <span>19.09.2020</span>
             <span>Сдача ЖК "Европейский квартал" в г. Черновцы</span>
           </li>
-          <li class="item">
+          <li class="d-flex flex-column item">
             <img src="" alt="">
             <span>19.09.2020</span>
             <span>Сдача ЖК "Европейский квартал" в г. Черновцы</span>

@@ -4,4 +4,12 @@
   h1 {
     margin-bottom: 3.15rem;
   }
+
+  .item:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  button {
+    margin-top: 2.8rem;
+  }
 }
