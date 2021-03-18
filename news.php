@@ -7,7 +7,7 @@ wp_enqueue_style( 'news', get_template_directory_uri() . '/assets/css/news.min.c
 get_header();
 ?>
 
-<div class="main-div" style="background-image:  url(<?= get_template_directory_uri() ?>/assets/dummy/background.jpg)">
+<div class="section" style="background-image:  url(<?= get_template_directory_uri() ?>/assets/dummy/background.jpg)">
   <div class="container d-flex flex-column">
     <ul>
       <?php foreach ([1,2,3,4] as $value): ?>

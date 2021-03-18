@@ -2,73 +2,78 @@
 @import "bootstrap/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
-.main-div {
+.section {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  padding-bottom: 34rem
-}
+  padding-bottom: 34rem;
 
-ul {
-  list-style: none;
-}
+  ul {
+    list-style: none;
 
-.item {
-  margin-bottom: 2.6rem;
-  background-color: #f1f4f7;
-}
+    .item {
+      margin-bottom: 2.6rem;
+      background-color: #f1f4f7;
 
-.photo {
-  width: 19rem;
+      .photo {
+        width: 19rem;
 
-  img {
-    width: 100%;
-  }
-}
+        img {
+          width: 100%;
+        }
+      }
 
-.text {
-  margin: 4.2rem 2rem 1rem 5rem;
-  flex: 1 ;
+      .text {
+        margin: 4.2rem 2rem 1rem 5rem;
+        flex: 1 ;
 
-    span:last-child {
-      font-weight: bold;
-      font-size: 1.5rem;
+        span:last-child {
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+
+        span:first-child {
+          font-size: 0.8rem;
+        }
+      }
     }
-
-    span:first-child {
-      font-size: 0.8rem;
-    }
   }
 
-.btn {
-  margin-top: 4rem;
-  font-weight: unset !important;
+  .btn {
+    margin-top: 4rem;
+    font-weight: unset !important;
+  }
 }
 
 @include media-breakpoint-down(xxl) {
-  .text {
-    margin: 1rem;
-  }
-
-  .main-div {
+   .section {
     padding-bottom: 20rem;
+
+     .text {
+       margin: 1rem !important;
+     }
   }
 }
 
 @include media-breakpoint-down(lg) {
-  .text {
-    span:last-child {
-      font-size: 1rem;
-    }
-  }
-
-  .photo {
-    margin: 0;
-    width: 100%;
-  }
-
-  .main-div {
+   .section {
     padding-bottom: 8rem;
-  }
+
+      .btn {
+        margin-top: 0;
+      }
+
+      .text {
+        span:last-child {
+          font-size: 1rem !important;
+        }
+      }
+
+      .photo {
+        margin: 0 !important;
+        width: 100% !important;
+      }
+    }
 }
+
 
