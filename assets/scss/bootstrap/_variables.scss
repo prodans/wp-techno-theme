@@ -2,6 +2,7 @@ $variable-prefix: t-;
 
 $primary: #379df4;
 $dark: #273b48;
+$light: #f1f4f7;
 
 $font-size-root: 20px;
 $h1-font-size: 3rem;
@@ -12,7 +13,7 @@ $grid-breakpoints: (
         md: 768px,
         lg: 992px,
         xl: 1200px,
-        xxl: 1536px
+        xxl: 1800px
 );
 
 @import "../../../node_modules/bootstrap/scss/variables";
