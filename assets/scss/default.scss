@@ -1,15 +1,23 @@
-#news-and-promotions .container {
+.container {
   padding: 7.5rem 5.75rem;
 
   h1 {
     margin-bottom: 3.15rem;
   }
 
-  .item:not(:last-child) {
-    margin-right: 2rem;
+  .item {
+    text-decoration: inherit;
+
+    &:not(:hover) {
+      color: inherit;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 
-  button {
+  .btn {
     margin-top: 2.8rem;
   }
 }

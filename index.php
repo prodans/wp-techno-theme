@@ -20,24 +20,16 @@ get_header();
     <div id="news-and-promotions" class="section">
       <div class="container d-flex flex-column">
         <h1 class="fw-bold text-primary">Новости и акции</h1>
-        <ul class="d-flex list-unstyled">
-          <li class="d-flex flex-column item">
+        <div class="d-flex">
+          <?php foreach ([1, 2, 3] as $item): ?>
+          <a class="d-flex flex-column item" href="#">
             <img src="" alt="">
             <span>19.09.2020</span>
-            <span>Сдача ЖК "Европейский квартал" в г. Черновцы</span>
-          </li>
-          <li class="d-flex flex-column item">
-            <img src="" alt="">
-            <span>19.09.2020</span>
-            <span>Сдача ЖК "Европейский квартал" в г. Черновцы</span>
-          </li>
-          <li class="d-flex flex-column item">
-            <img src="" alt="">
-            <span>19.09.2020</span>
-            <span>Сдача ЖК "Европейский квартал" в г. Черновцы</span>
-          </li>
-        </ul>
-        <button class="btn btn-danger mx-auto">Все новости</button>
+            <span class="fw-bold">Сдача ЖК "Европейский квартал" в г. Черновцы</span>
+          </a>
+          <?php endforeach; ?>
+        </div>
+        <a class="btn btn-danger btn-wide mx-auto">Все новости</a>
       </div>
     </div>
     <div class="section">Some section</div>
