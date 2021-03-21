@@ -6,13 +6,19 @@ $btn-padding-x: 1.5em;
 
 @import "../../../node_modules/bootstrap/scss/buttons";
 
-.btn-primary {
-  color: $white;
-
-  &:hover,
-  &:focus,
-  &:active {
+@each $value in (primary, danger) {
+  .btn-#{$value} {
     color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
   }
 }
 

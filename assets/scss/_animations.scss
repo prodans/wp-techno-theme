@@ -1,11 +1,13 @@
-@keyframes pulse-primary {
-	from {
-		box-shadow: 0 0 1px 3px rgba($primary, .5), 0 0 0 8px rgba(tint-color($primary, $btn-active-bg-tint-amount), .2);
-	}
+@each $key, $value in (primary: $primary, danger: $danger) {
+  @keyframes pulse-#{$key} {
+    from {
+      box-shadow: 0 0 1px 3px rgba($value, .5), 0 0 0 8px rgba(tint-color($value, $btn-active-bg-tint-amount), .2);
+    }
 
-	to {
-		box-shadow: 0 0 18px 6px transparent, 0 0 4px 30px transparent;
-	}
+    to {
+      box-shadow: 0 0 18px 6px transparent, 0 0 4px 30px transparent;
+    }
+  }
 }
 
 @keyframes shake {

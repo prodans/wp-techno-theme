@@ -1,5 +1,9 @@
-@import "bootstrap/functions";
-@import "bootstrap/variables";
+@import "bootstrap/core";
+
+.fp-tableCell {
+  //padding-top: $header-height;
+
+}
 
 #fp-nav {
   position: fixed;

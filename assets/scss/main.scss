@@ -3,3 +3,17 @@
 @import "ti";
 @import "animations";
 @import "header";
+
+@each $key, $value in (primary: $primary, danger: $danger) {
+  .btn-#{$key}:hover {
+    animation: pulse-#{$key} 1s .1s ease infinite forwards;
+  }
+}
+
+.btn-primary {
+  &:hover {
+    i {
+      animation: shake .4s ease-out;
+    }
+  }
+}

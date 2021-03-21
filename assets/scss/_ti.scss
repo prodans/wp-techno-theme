@@ -1,12 +1,14 @@
-.ti:before {
-  display: inline-block;
+.ti {
+  display: inline-flex;
+
+  &:before {
+    line-height: normal;
+    font-weight: inherit;
+  }
 }
 
-$ti-rotates: (90, 180, 270);
-
-@each $value in $ti-rotates {
+@each $value in (90, 180, 270) {
   .ti-rotate-#{$value}:before {
     transform: rotate(#{$value}deg);
   }
 }
-

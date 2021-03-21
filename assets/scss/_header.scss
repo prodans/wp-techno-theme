@@ -1,8 +1,6 @@
 $header-height: 6rem;
 
 header {
-  height: $header-height;
-
   nav {
     height: $header-height;
 
@@ -16,7 +14,7 @@ header {
       }
 
       i {
-        vertical-align: middle;
+        margin-right: 0.4rem;
       }
     }
 
@@ -34,18 +32,7 @@ header {
     }
 
     .btn-primary {
-      &:hover {
-        &:hover {
-          animation: pulse-primary 1s .1s ease infinite forwards;
-        }
-
-        i {
-          animation: shake .4s ease-out;
-        }
-      }
-
       i {
-        display: inline-block;
         margin-right: 0.5rem;
         vertical-align: middle;
       }
