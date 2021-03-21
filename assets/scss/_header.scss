@@ -50,8 +50,6 @@ header {
 
 @include media-breakpoint-down(md) {
   header {
-    height: $header-height / 2;
-
     nav {
       height: $header-height / 2;
     }
