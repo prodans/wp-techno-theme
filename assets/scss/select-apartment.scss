@@ -1,6 +1,4 @@
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-@import "../../node_modules/bootstrap/scss/mixins";
+@import "bootstrap/core";
 
 nav {
   li {
@@ -120,6 +118,128 @@ nav {
           line-height: 1rem;
         }
       }
+    }
+  }
+
+  .apartment-layout {
+    position: relative;
+
+    div:first-child {
+      position: absolute;
+      top: 4.55rem;
+      left: 28.75rem;
+      font-size: 2.4rem;
+      color: white;
+    }
+
+    .parameters {
+      position: absolute;
+      width: 8rem;
+      height: 8rem;
+      background-color: #f44437;
+      color: white;
+      border-radius: 50%;
+      cursor: pointer;
+      text-align: center;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 4rem;
+      bottom: 2rem;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .construction-progress {
+    margin: 10rem 0;
+
+    div:first-child {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .camera {
+      margin-left: 6rem;
+      font-weight: 600;
+
+      .ti-camera {
+        font-size: 4.4rem;
+      }
+
+      p {
+        margin-left: 2rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .owl-carousel {
+      margin-top: 3rem;
+      padding-right: 1.4rem;
+      padding-left: 3rem;
+
+      .count-img {
+        right: 1rem;
+        bottom: .6rem;
+        color: white;
+        font-size: 1rem;
+
+        i {
+          padding-top: 0.2rem;
+        }
+
+        p {
+          padding-left: .5rem;
+        }
+      }
+    }
+
+    .owl-nav {
+      margin-top: 1rem;
+
+      .owl-dots {
+        width: 100%;
+
+        .owl-dot {
+          flex: 1;
+          height: .2rem;
+          background-color: #c2c8cf;
+          border: none;
+          transition: all .4s;
+
+          &.active {
+            height: .4rem;
+            background-color: $primary;
+          }
+
+          &:not(:last-child) {
+            margin-right: .5rem;
+          }
+        }
+      }
+
+      .owl-prev, .owl-next {
+        font-size: 3.5rem;
+        display: inline-flex;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        background-color: transparent;
+      }
+
+      i {
+        margin-left: 2rem;
+      }
+    }
+
+  }
+
+  .gallery {
+    .owl-nav {
+      bottom: 5%;
     }
   }
 }
