@@ -1,6 +1,7 @@
 @import "bootstrap/core";
 
 .section-links {
+
   .btn-danger {
     margin-top: 4rem;
 
@@ -9,20 +10,18 @@
     }
   }
 
-  .owl-carousel {
-    .container {
-      position: absolute;
-      top: 28%;
-      right: 0;
-      left: 0;
-      margin-top: 5.7rem;
-      color: $white;
+  .container {
+    position: absolute;
+    top: 28%;
+    right: 0;
+    left: 0;
+    margin-top: 5.7rem;
+    color: $white;
 
-      .subtitle {
-        font-size: 5rem;
-        font-weight: bold;
-        margin-top: 1.9rem;
-      }
+    .subtitle {
+      font-size: 5rem;
+      font-weight: bold;
+      margin-top: 1.9rem;
     }
   }
 }
@@ -61,46 +60,6 @@
   .item {
     padding-right: $spacer;
     padding-left: $spacer;
-    padding-bottom: 11rem;
-  }
-
-  .title {
-    font-size: 2.4rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 1.8rem;
-  }
-
-  .btn {
-    margin-top: 3.7rem;
-  }
-
-  .owl-nav {
-    button {
-      position: absolute;
-      bottom: 2rem;
-
-      i {
-        font-size: 2rem;
-      }
-
-      &.disabled {
-        i {
-          color: $secondary !important;
-        }
-      }
-    }
-
-    .owl-prev {
-      left: 1rem;
-    }
-
-    .owl-next {
-      right: 1rem;
-    }
   }
 }
 
