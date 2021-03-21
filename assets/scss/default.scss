@@ -1,6 +1,14 @@
 @import "bootstrap/core";
 
 .section-links {
+  .owl-nav {
+    position: absolute;
+    z-index: 100;
+    bottom: 17.5%;
+    right: 0;
+    left: 0;
+  }
+
   .btn-danger {
     margin-top: 4rem;
 
