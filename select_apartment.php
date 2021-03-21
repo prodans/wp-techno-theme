@@ -4,9 +4,11 @@
  */
 
 wp_enqueue_style( 'about-us', get_template_directory_uri() . '/assets/css/about-us.min.css' );
+wp_enqueue_style( 'about-us', get_template_directory_uri() . '/assets/css/main.min.css' );
 wp_enqueue_style( 'select-apartment', get_template_directory_uri() . '/assets/css/select-apartment.min.css' );
 wp_enqueue_style( 'owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', [], '2.3.4' );
 
+wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/select-apartment.js', ['owl-carousel' ], wp_get_theme()->get( 'Version' ) );
 wp_enqueue_script( 'owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', [ 'jquery' ], '2.3.4' );
 
 get_header();
@@ -160,13 +162,70 @@ get_header();
           <img src="<?= get_template_directory_uri() ?>/assets/dummy/constr-techno/ph12.jpg)" alt=""></div>
       </div>
     </div>
-    <div class="apartment-layout"></div>
-    <div class="infrastructure"></div>
-    <div class="construction-progress"></div>
-    <div class="gallery"></div>
+    <div class="apartment-layout">
+      <div class="fw-bold">
+        <p>Выберите этаж</p>
+      </div>
+      <div>
+        <img src="<?= get_template_directory_uri() ?>/assets/dummy/layout.jpg" alt="" style="width: 100%">
+      </div>
+      <div class="parameters">
+        <p>Подбор по параметрам</p>
+      </div>
+    </div>
+    <div class="infrastructure">
+    </div>
+    <div class="construction-progress">
+      <div class="m-auto text-primary fw-bold">
+        <p>Ход строительства</p>
+      </div>
+      <div class="camera text-primary d-flex">
+        <i class="ti ti-camera"></i>
+        <p class="fs-4">Онлайн-трансляция</p>
+      </div>
+      <div class="owl-carousel">
+        <div class="item position-relative">
+          <img src="<?= get_template_directory_uri() ?>/assets/dummy/carousel/ph1.jpg)" alt="">
+          <div class="count-img position-absolute d-flex fw-bold">
+            <i class="ti ti-image"></i>
+            <p>7</p>
+          </div>
+        </div>
+        <div class="item position-relative">
+          <img src="<?= get_template_directory_uri() ?>/assets/dummy/carousel/ph2.jpg)" alt="">
+          <div class="count-img position-absolute d-flex fw-bold">
+            <i class="ti ti-image"></i>
+            <p>7</p>
+          </div>
+        </div>
+        <div class="item position-relative">
+          <img src="<?= get_template_directory_uri() ?>/assets/dummy/carousel/ph3.jpg)" alt="">
+          <div class="count-img position-absolute d-flex fw-bold">
+            <i class="ti ti-image"></i>
+            <p>7</p>
+          </div>
+      </div>
+      </div>
+      <div class="owl-nav d-flex justify-content-between">
+        <div class="owl-dots d-flex align-items-center"></div>
+      </div>
+    </div>
+    <div class="gallery position-relative">
+      <div class="owl-nav d-flex container">
+        <div class="owl-count d-flex">
+          <div class="owl-count-current text-primary mb-auto">1</div>
+          <div class="owl-count-all mt-auto">6</div>
+        </div>
+      </div>
+      <div class="owl-carousel">
+        <img src="<?= get_template_directory_uri() ?>/assets/dummy/Photo_12.jpg" alt="">
+      </div>
+    </div>
     <div class="documents"></div>
   </div>
 </div>
 
 <?php
+
+
 get_footer();
