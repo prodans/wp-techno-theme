@@ -14,27 +14,27 @@ get_header();
       <ul class="nav flex-column sidebar">
         <li class="bg-light">
           <i class="ti ti-building text-primary"></i>
-          <span>О КОМПАНИИ</span>
+          <span class="text-uppercase">О КОМПАНИИ</span>
         </li>
         <li class="bg-light">
           <i class="ti ti-factory text-primary"></i>
-          <span>ТЕХНО С</span>
+          <span class="text-uppercase">ТЕХНО С</span>
         </li>
         <li class="bg-light">
           <i class="ti ti-wood text-primary"></i>
-          <span>ТЕХНО ПЛЮС</span>
+          <span class="text-uppercase">ТЕХНО ПЛЮС</span>
         </li>
         <li class="bg-light">
           <i class="ti ti-crane text-primary"></i>
-          <span>ТЕХНО БУД</span>
+          <span class="text-uppercase">ТЕХНО БУД</span>
         </li>
         <li class="bg-light">
           <i class="ti ti-truck text-primary"></i>
-          <span>ЗАХІД ТЕХНО-БУД</span>
+          <span class="text-uppercase">ЗАХІД ТЕХНО-БУД</span>
         </li>
         <li class="bg-light">
           <i class="ti ti-oil text-primary"></i>
-          <span>ТЕХНО НАФТА ПЛЮС</span>
+          <span class="text-uppercase">ТЕХНО НАФТА ПЛЮС</span>
         </li>
       </ul>
     </nav>
