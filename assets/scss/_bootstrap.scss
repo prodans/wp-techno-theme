@@ -51,6 +51,7 @@
 }
 
 .navbar-toggler {
+  height: 100%;
   border: none;
   margin-right: 1rem;
 
@@ -59,9 +60,30 @@
   }
 }
 
+.navbar-brand {
+  height: 100%;
+
+  img {
+    height: 100%;
+  }
+}
+
 @include media-breakpoint-down(xxl) {
   .navbar {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .navbar {
+    padding: .4rem;
   }
 }

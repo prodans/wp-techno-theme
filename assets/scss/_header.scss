@@ -1,8 +1,6 @@
 @import "bootstrap/core";
 
 header {
-  height: $header-height;
-
   nav {
     height: $header-height;
 
@@ -38,6 +36,28 @@ header {
         margin-right: 0.5rem;
         vertical-align: middle;
       }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  header {
+    .location {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  header {
+    height: $header-height / 2;
+
+    nav {
+      height: $header-height / 2;
+    }
+
+    .contacts {
+      display: none !important;
     }
   }
 }

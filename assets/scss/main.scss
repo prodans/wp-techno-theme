@@ -4,6 +4,10 @@
 @import "animations";
 @import "header";
 
+html, body {
+  height: 100%;
+}
+
 @each $key, $value in (primary: $primary, danger: $danger) {
   .btn-#{$key}:hover {
     animation: pulse-#{$key} 1s .1s ease infinite forwards;
@@ -54,5 +58,15 @@
       margin-right: -.2em;
       margin-left: -.2em;
     }
+  }
+}
+
+section.content {
+  padding-top: $header-height;
+}
+
+@include media-breakpoint-down(md) {
+  section.content {
+    padding-top: $header-height / 2;
   }
 }

@@ -52,7 +52,30 @@
         },
         1440: {
           items: 3,
-          nav: false
+          nav: false,
+          touchDrag: false
+        }
+      },
+      navText: [
+        '<i class="ti ti-arrow-right ti-rotate-180 text-primary" aria-hidden="true"></i>',
+        '<i class="ti ti-arrow-right text-primary" aria-hidden="true"></i>'
+      ]
+    });
+
+    $('.section-news .owl-carousel').owlCarousel({
+      items: 1,
+      nav: true,
+      dots: false,
+      mouseDrag: false,
+      margin: 40,
+      responsive: {
+        1024: {
+          items: 2
+        },
+        1440: {
+          items: 3,
+          nav: false,
+          touchDrag: false
         }
       },
       navText: [
