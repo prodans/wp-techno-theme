@@ -10,7 +10,7 @@ wp_enqueue_style( 'fullpage', get_template_directory_uri() . '/assets/css/fullpa
 wp_enqueue_style( 'owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', [], '2.3.4' );
 
 wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/default.js', [ 'jquery', 'fullpage', 'owl-carousel' ], wp_get_theme()->get( 'Version' ) );
-wp_enqueue_script( 'fullpage', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js', [ 'jquery' ], '2.9.7' );
+wp_enqueue_script( 'fullpage', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js', [ 'jquery' ], '3.1.0' );
 wp_enqueue_script( 'owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', [ 'jquery' ], '2.3.4' );
 
 
@@ -40,8 +40,8 @@ get_header();
     <div class="section section-complexes" data-anchor="complexes">
       <div class="owl-carousel">
         <?php foreach ([1, 2, 3] as $item): ?>
-        <div class="item d-flex flex-column justify-content-end align-items-center" style="background-image: url(<?= get_template_directory_uri() ?>/assets/dummy/2<?= $item ?>.jpg)">
-          <h1 class="title">Квартиры от 700 000 грн.</h1>
+        <div class="item d-flex flex-column justify-content-end align-items-center text-center" style="background-image: url(<?= get_template_directory_uri() ?>/assets/dummy/2<?= $item ?>.jpg)">
+          <div class="title">Квартиры от 700 000 грн.</div>
           <div class="subtitle">ЖК Millenium</div>
           <a href="#" class="btn btn-danger btn-wide d-inline-flex align-items-center">Подробнее<i class="ti ti-arrow-right"></i></a>
         </div>

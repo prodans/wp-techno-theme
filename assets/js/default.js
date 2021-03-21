@@ -1,5 +1,9 @@
 (function ($) {
   $(document).ready(function () {
+    fp_utils.getWindowHeight = function getWindowHeight() {
+      console.log(111);
+      return 26;
+    };
     $('#fullpage').fullpage({
       css3: true,
       navigation: true,
@@ -30,6 +34,7 @@
       smartSpeed: 1500,
       autoplaySpeed: 1500,
       autoplayTimeout: 10000,
+      mouseDrag: false,
       navText: [
         '<i class="ti ti-arrow-right ti-rotate-180 text-primary" aria-hidden="true"></i>',
         '<i class="ti ti-arrow-right text-primary" aria-hidden="true"></i>'
@@ -37,7 +42,23 @@
     });
 
     $('.section-complexes .owl-carousel').owlCarousel({
-      items: 3,
+      items: 1,
+      nav: true,
+      dots: false,
+      mouseDrag: false,
+      responsive: {
+        1024: {
+          items: 2
+        },
+        1440: {
+          items: 3,
+          nav: false
+        }
+      },
+      navText: [
+        '<i class="ti ti-arrow-right ti-rotate-180 text-primary" aria-hidden="true"></i>',
+        '<i class="ti ti-arrow-right text-primary" aria-hidden="true"></i>'
+      ]
     });
   });
 })(jQuery);

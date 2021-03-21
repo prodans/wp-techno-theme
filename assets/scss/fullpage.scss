@@ -1,8 +1,8 @@
 @import "bootstrap/core";
 
-.fp-tableCell {
-  //padding-top: $header-height;
-
+.section, .fp-tableCell {
+  margin-bottom: -$header-height;
+  padding-bottom: $header-height;
 }
 
 #fp-nav {
@@ -15,8 +15,12 @@
   border-radius: 25px;
   background: rgba($black, .5);
 
-  &.left {
+  &.fp-left {
     left: 1rem;
+  }
+
+  .fp-sr-only {
+    display: none;
   }
 
   ul {

@@ -1,30 +1,63 @@
+// Prefix
 $variable-prefix: t-;
 
+// Colors
 $primary: #379df4;
 $danger: #f44437;
 $dark: #273b48;
 $light: #f1f4f7;
+$secondary: #c2c8cf;
 
+// Font
 $font-size-root: 20px;
 $h1-font-size: 3rem;
 
+// Grid
 $grid-breakpoints: (
         xs: 0,
         sm: 576px,
         md: 768px,
         lg: 992px,
         xl: 1200px,
-        xxl: 1800px
+        xxl: 1400px
+);
+
+// Containers
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1580px
 );
 
 @import "../../../node_modules/bootstrap/scss/variables";
 
+// Font
 $font-family-base: Montserrat, $font-family-base;
 
-/* Colors */
-$bg-color: #fff;
-$fg-color: #273b48;
-$primary-color: #379df4;
-$accent-color: #f44437;
-$black-color: #323232;
-$grey-color: #8a8a8a;
+// Header
+$header-height: 6rem;
+
+// Buttons
+$btn-border-radius: 2em;
+$btn-font-weight: 600;
+$btn-font-size: .8rem;
+$btn-padding-y: 1em;
+$btn-padding-x: 1.5em;
+
+// Navbar
+$navbar-padding-x: 4rem;
+$navbar-padding-y: 1.25rem;
+$navbar-brand-padding-y: null;
+$navbar-brand-margin-end: null;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
+
+$navbar-dark-active-font-weight: 700;
+$navbar-dark-hover-font-weight: 700;
+
+// Nav
+$nav-link-font-size: 0.9rem;
+$nav-link-font-weight: 600;
