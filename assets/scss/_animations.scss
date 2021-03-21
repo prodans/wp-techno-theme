@@ -1,3 +1,5 @@
+@import "bootstrap/core";
+
 @each $key, $value in (primary: $primary, danger: $danger) {
   @keyframes pulse-#{$key} {
     from {
