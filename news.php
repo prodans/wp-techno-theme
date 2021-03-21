@@ -9,7 +9,7 @@ get_header();
 
 <div class="section" style="background-image:  url(<?= get_template_directory_uri() ?>/assets/dummy/background.jpg)">
   <div class="container d-flex flex-column">
-    <ul>
+    <ul class="list-unstyled">
       <?php foreach ([1,2,3,4] as $value): ?>
       <li class="item d-flex flex-wrap">
         <div class="photo">

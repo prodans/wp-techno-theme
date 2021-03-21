@@ -1,0 +1,162 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+nav {
+  li {
+    font-weight: 600;
+  }
+}
+
+.cont {
+  margin-left: 3rem;
+
+  .main {
+    width: 72.1rem;
+
+    .select-apart {
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 47.4rem;
+      flex-direction: column;
+      background-position: center center;
+
+      .main-text {
+        color: white;
+        text-align: center;
+        max-width: 31.6rem;
+
+        p {
+          margin-bottom: 0;
+        }
+
+        p:first-child {
+          font-size: 2.4rem;
+        }
+
+        p:last-child {
+          font-size: 3.6rem;
+        }
+      }
+
+      .main-footer {
+        background-color: rgba(8, 81, 145, 0.4);
+
+        .price {
+          color: white;
+          padding-left: 1.5rem;
+        }
+
+        .big-text {
+          color: #f44437;
+          font-size: 2.4rem;
+          padding-right: 1.6rem;
+          border-right: 2px solid #f44437;
+          margin-top: 1.15rem;
+          margin-bottom: 1.1rem;
+        }
+
+        .d-flex:first-child {
+          margin-left: 2.1rem;
+        }
+
+        .d-flex:last-child {
+          margin-right: 4rem;
+        }
+
+        .d-flex {
+          p:first-child {
+            margin-bottom: 0;
+            margin-top: 1.8rem;
+          }
+
+          p:last-child {
+            margin-bottom: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .about-complex {
+    .photo-complex {
+      width: 32rem;
+    }
+
+    .text-complex {
+      margin: 8.65rem 3.85rem 0 3.85rem;
+
+      p:first-child {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .constr-techno {
+    width: 72rem;
+
+    p {
+      font-size: 3rem;
+    }
+
+    div {
+      position: relative;
+
+      img {
+        width: 18rem;
+      }
+
+      .about-block {
+        background-color: white;
+        right: 0;
+        bottom: 1rem;
+        font-weight: bold;
+
+        p {
+          padding: 0.8rem;
+          font-size: 0.9rem;
+          text-align: right;
+          margin-bottom: 0;
+          line-height: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .cont {
+    margin-left: 0;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .cont .main .select-apart {
+    height: 34rem;
+  }
+
+  //.cont .main .select-apart .main-footer .d-flex {
+  //  margin-left: auto;
+  //  margin-right: auto;
+  //  width: 100%;
+  //}
+}
+
+@include media-breakpoint-down(lg) {
+  .cont .main .select-apart {
+    height: 25.2rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .cont .main .select-apart {
+    height: 14rem;
+  }
+
+
+}
+
+
+
+
+
