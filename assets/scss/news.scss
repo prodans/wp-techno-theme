@@ -1,6 +1,6 @@
 @import "bootstrap/core";
 
-.section {
+.content {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -45,7 +45,7 @@
 }
 
 @include media-breakpoint-down(xxl) {
-   .section {
+   .content {
     padding-bottom: 20rem;
 
      .text {
@@ -59,7 +59,7 @@
 }
 
 @include media-breakpoint-down(lg) {
-   .section {
+   .content {
     padding-bottom: 8rem;
 
       .btn {

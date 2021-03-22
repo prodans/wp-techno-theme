@@ -15,7 +15,22 @@
       navText: [
         '<i class="ti ti-arrow-right ti-rotate-180 text-primary" aria-hidden="true"></i>',
         '<i class="ti ti-arrow-right text-primary" aria-hidden="true"></i>'
-      ]
+      ],
+      responsiveClass:true,
+      responsive:{
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        },
+        1440: {
+          items: 3
+        }
+      }
     });
     $('.gallery .owl-carousel').owlCarousel({
       items: 1,

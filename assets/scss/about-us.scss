@@ -10,14 +10,6 @@
   }
 }
 
-.links {
-  display: block;
-
-  ul span {
-    padding-left: 1.1rem;
-  }
-}
-
 .text {
   margin-top: 0.95rem;
   flex: 1;
@@ -50,16 +42,6 @@
   }
 }
 
-.sidebar {
-  min-width: 20rem;
-  font-size: 0.9rem;
-
-  li {
-    margin-bottom: 0.05rem;
-    height: 3rem;
-    padding: 0.85rem 1.15rem;
-  }
-}
 
 @include media-breakpoint-down(xxl) {
   .links {

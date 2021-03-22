@@ -9,7 +9,7 @@ get_header();
 // TODO: zafixi sidebar, meow
 ?>
 
-  <div class="container d-flex flex-wrap">
+  <section class="content container d-flex flex-wrap">
     <nav class="links">
       <ul class="nav flex-column sidebar">
         <li class="bg-light">
@@ -61,7 +61,7 @@ get_header();
       </div>
       <p class="author" align="right">В. Добровольський</p>
     </div>
-  </div>
+  </section>
 
 <?php
 get_footer();

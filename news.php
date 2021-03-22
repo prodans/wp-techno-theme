@@ -7,7 +7,7 @@ wp_enqueue_style( 'news', get_template_directory_uri() . '/assets/css/news.min.c
 get_header();
 ?>
 
-<div class="section" style="background-image:  url(<?= get_template_directory_uri() ?>/assets/dummy/background.jpg)">
+<section class="content" style="background-image:  url(<?= get_template_directory_uri() ?>/assets/dummy/background.jpg)">
   <div class="container d-flex flex-column">
     <ul class="list-unstyled">
       <?php foreach ([1,2,3,4] as $value): ?>
@@ -24,7 +24,7 @@ get_header();
     </ul>
     <button class="btn btn-danger btn-wide mx-auto">+ ПОКАЗАТЬ ЕЩЕ 8 ИЗ 102</button>
   </div>
-</div>
+</section>
 
 <?php
 get_footer();

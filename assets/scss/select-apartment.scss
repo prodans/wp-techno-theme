@@ -1,23 +1,32 @@
 @import "bootstrap/core";
 
-nav {
-  li {
-    font-weight: 600;
-  }
+.header-text {
+  font-size: 3rem;
 }
 
-.cont {
+.content {
   margin-left: 3rem;
+  height: 100%;
+
+  nav {
+    margin-top: 8rem;
+
+    li {
+      font-weight: 600;
+    }
+  }
 
   .main {
-    width: 72.1rem;
+    flex: 1;
+    overflow: auto;
+    height: 100%;
 
     .select-apart {
       background-repeat: no-repeat;
-      background-size: contain;
       height: 47.4rem;
       flex-direction: column;
       background-position: center center;
+      background-size: cover;
 
       .main-text {
         color: white;
@@ -74,210 +83,369 @@ nav {
         }
       }
     }
-  }
 
-  .about-complex {
-    .photo-complex {
-      width: 32rem;
-    }
+    .about-complex {
+      .photo-complex {
+        width: 32rem;
+        flex: 1;
+      }
 
-    .text-complex {
-      margin: 8.65rem 3.85rem 0 3.85rem;
+      .text-complex {
+        margin: 8.65rem 3.85rem 0 3.85rem;
+        flex: 1;
 
-      p:first-child {
-        font-size: 2.4rem;
+        p:first-child {
+          font-size: 2.4rem;
+        }
       }
     }
-  }
 
-  .constr-techno {
-    width: 72rem;
+    .constr-techno {
+      width: 72rem;
+      margin-top: 3.5rem;
 
-    p {
-      font-size: 3rem;
+      div {
+        position: relative;
+
+        img {
+          width: 18rem;
+        }
+
+        .about-block {
+          background-color: white;
+          right: 0;
+          bottom: 1rem;
+          font-weight: bold;
+
+          p {
+            padding: 0.8rem;
+            font-size: 0.9rem;
+            text-align: right;
+            margin-bottom: 0;
+            line-height: 1rem;
+          }
+        }
+      }
     }
 
-    div {
+    .apartment-layout {
       position: relative;
 
-      img {
-        width: 18rem;
-      }
-
-      .about-block {
-        background-color: white;
-        right: 0;
-        bottom: 1rem;
-        font-weight: bold;
-
-        p {
-          padding: 0.8rem;
-          font-size: 0.9rem;
-          text-align: right;
-          margin-bottom: 0;
-          line-height: 1rem;
-        }
-      }
-    }
-  }
-
-  .apartment-layout {
-    position: relative;
-
-    div:first-child {
-      position: absolute;
-      top: 4.55rem;
-      left: 28.75rem;
-      font-size: 2.4rem;
-      color: white;
-    }
-
-    .parameters {
-      position: absolute;
-      width: 8rem;
-      height: 8rem;
-      background-color: #f44437;
-      color: white;
-      border-radius: 50%;
-      cursor: pointer;
-      text-align: center;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: 4rem;
-      bottom: 2rem;
-
-      p {
-        margin: 0;
-      }
-    }
-  }
-
-  .construction-progress {
-    margin: 10rem 0;
-
-    div:first-child {
-      font-size: 3rem;
-      text-align: center;
-    }
-
-    .camera {
-      margin-left: 6rem;
-      font-weight: 600;
-
-      .ti-camera {
-        font-size: 4.4rem;
-      }
-
-      p {
-        margin-left: 2rem;
-        margin-top: 1rem;
-      }
-    }
-
-    .owl-carousel {
-      margin-top: 3rem;
-      padding-right: 1.4rem;
-      padding-left: 3rem;
-
-      .count-img {
-        right: 1rem;
-        bottom: .6rem;
+      div:first-child {
+        position: absolute;
+        top: 4.55rem;
+        left: 28.75rem;
+        font-size: 2.4rem;
         color: white;
-        font-size: 1rem;
+      }
 
-        i {
-          padding-top: 0.2rem;
+      button {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 100%;
+        font-size: 0.9rem;
+        position: absolute;
+        right: 4rem;
+        bottom: 2rem;
+
+      }
+    }
+
+    .construction-progress {
+      margin: 10rem 0;
+
+      .camera {
+        margin-left: 6rem;
+        font-weight: 600;
+
+        .ti-camera {
+          font-size: 4.4rem;
         }
 
         p {
-          padding-left: .5rem;
+          margin-left: 2rem;
+          margin-top: 1rem;
         }
       }
-    }
 
-    .owl-nav {
-      margin-top: 1rem;
+      .owl-carousel {
+        margin-top: 3rem;
+        padding-right: 1.4rem;
+        padding-left: 3rem;
 
-      .owl-dots {
-        width: 100%;
+        .count-img {
+          right: 1rem;
+          bottom: .6rem;
+          color: white;
+          font-size: 1rem;
 
-        .owl-dot {
-          flex: 1;
-          height: .2rem;
-          background-color: #c2c8cf;
-          border: none;
-          transition: all .4s;
-
-          &.active {
-            height: .4rem;
-            background-color: $primary;
+          i {
+            padding-top: 0.2rem;
           }
 
-          &:not(:last-child) {
-            margin-right: .5rem;
+          p {
+            padding-left: .5rem;
           }
         }
       }
 
-      .owl-prev, .owl-next {
-        font-size: 3.5rem;
-        display: inline-flex;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        background-color: transparent;
+      .owl-nav {
+        margin: 1rem 1rem 1rem 2.5rem;
+
+        button {
+          i {
+            margin-right: 0;
+            margin-left: 0;
+          }
+        }
+
+        .owl-dots {
+          width: 100%;
+
+          .owl-dot {
+            flex: 1;
+            height: .2rem;
+            background-color: #c2c8cf;
+            border: none;
+            transition: all .4s;
+
+            &.active {
+              height: .4rem;
+              background-color: $primary;
+            }
+
+            &:not(:last-child) {
+              margin-right: .5rem;
+            }
+          }
+        }
+
+        .owl-prev, .owl-next {
+          font-size: 3.5rem;
+        }
       }
 
-      i {
-        margin-left: 2rem;
+    }
+
+    .gallery {
+      margin-bottom: 6rem;
+
+      .owl-nav {
+        bottom: 5%;
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        left: 0;
       }
     }
 
-  }
+    .documents {
+      .block {
+        margin: 3rem 4.1rem 7.6rem 6rem;
 
-  .gallery {
-    .owl-nav {
-      bottom: 5%;
-      position: absolute;
-      z-index: 100;
-      right: 0;
-      left: 0;
+        div {
+          padding: 2.6rem 3rem;
+
+          .ti-pdf {
+            font-size: 2.5rem;
+          }
+
+          .ti-download {
+            font-size: 2rem;
+          }
+        }
+      }
     }
   }
 }
 
 @include media-breakpoint-down(xxl) {
-  .cont {
+  .content {
     margin-left: 0;
+
+    .links {
+      display: none;
+    }
+
+    .main {
+      .select-apart {
+        .main-footer {
+          .d-flex:last-child {
+            margin-right: auto;
+          }
+
+          .d-flex:first-child {
+            margin-left: auto;
+          }
+
+          div {
+            margin: auto;
+
+          }
+        }
+      }
+    }
   }
 }
 
 @include media-breakpoint-down(xl) {
-  .cont .main .select-apart {
-    height: 34rem;
-  }
+  .content {
+    .main {
+      .about-complex {
+        flex-direction: column;
 
-  //.cont .main .select-apart .main-footer .d-flex {
-  //  margin-left: auto;
-  //  margin-right: auto;
-  //  width: 100%;
-  //}
+        .photo-complex {
+          width: 100% !important;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .text-complex {
+          margin: 2rem !important;
+        }
+      }
+
+      .select-apart{
+        .main-footer {
+          .d-flex {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+          }
+        }
+      }
+
+      .constr-techno {
+        width: auto;
+      }
+
+      .construction-progress {
+        margin: 5rem 0;
+      }
+
+      .apartment-layout {
+        div:first-child {
+          top: 1rem;
+          left: 12rem;
+          font-size: 2rem;
+        }
+
+        button {
+          width: 5rem;
+          height: 5rem;
+          font-size: .5rem;
+          right: 1rem;
+          bottom: 2rem;
+        }
+      }
+
+    }
+  }
 }
 
 @include media-breakpoint-down(lg) {
-  .cont .main .select-apart {
-    height: 25.2rem;
+  .header-text {
+    font-size: 2rem;
+  }
+
+  .content .main .construction-progress .owl-nav .owl-next, .content .main .construction-progress .owl-nav .owl-prev {
+    font-size: 2rem;
+  }
+
+  .content {
+    .main {
+      .construction-progress {
+        .camera {
+          margin-left: 1rem;
+        }
+      }
+
+      .constr-techno {
+        div {
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .select-apart {
+        .main-text p:first-child {
+          font-size: 2rem;
+        }
+
+        .main-text p:last-child {
+          font-size: 3rem;
+        }
+      }
+
+      .about-complex {
+        .text-complex {
+          margin: 1rem !important;
+        }
+
+        .text-complex p:first-child {
+          font-size: 1.4rem;
+        }
+      }
+
+      .documents {
+        .block {
+          margin: 3rem 1rem;
+
+          .d-flex {
+            i {
+              font-size: 2rem;
+            }
+
+            p {
+              font-size: 1rem !important;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @include media-breakpoint-down(md) {
-  .cont .main .select-apart {
-    height: 14rem;
+  .content {
+    .main {
+      .select-apart {
+      }
+
+      .apartment-layout {
+        div:first-child {
+          top: 0;
+          left: 5rem;
+          font-size: 1.4rem;
+        }
+      }
+
+      .documents {
+        .block {
+          div {
+            padding: 2.6rem 0;
+          }
+        }
+      }
+    }
   }
+}
 
-
+@include media-breakpoint-down(sm) {
+  .content {
+    .main {
+      .apartment-layout {
+        div:first-child {
+          top: 0;
+          left: 5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
 
 
