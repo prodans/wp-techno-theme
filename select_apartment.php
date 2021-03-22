@@ -224,7 +224,7 @@ get_header();
           <div class="d-flex  justify-content-between">
             <i class="ti ti-pdf text-primary"></i>
             <p class="fw-bold fs-4">Разрешение на выполнение строительных работ</p>
-            <i class="ti ti-download text-primary"></i>
+            <i class="ti ti-download text-primary pointer"></i>
           </div>
         </div>
       </div>
