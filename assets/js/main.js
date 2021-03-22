@@ -21,12 +21,14 @@
     const $modal = $this.closest('.modal');
 
     $('body').removeClass('modal-open');
+    $modal.addClass('from-right');
     $modal.find('.show').removeClass('show');
     setTimeout(function () {
       $modal.removeClass('show');
     }, 100);
     setTimeout(function () {
       $modal.removeClass('d-flex');
+      $modal.removeClass('from-right');
     }, 1000);
   });
 })(jQuery);
