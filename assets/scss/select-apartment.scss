@@ -4,6 +4,10 @@
   font-size: 3rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .content {
   margin-left: 3rem;
   height: 100%;
@@ -420,6 +424,14 @@
           top: 0;
           left: 5rem;
           font-size: 1.4rem;
+        }
+      }
+
+      .constr-techno {
+        .d-flex {
+          div {
+            width: 100%;
+          }
         }
       }
 
