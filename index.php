@@ -22,15 +22,15 @@ get_header();
         <div class="owl-nav d-flex container">
           <div class="owl-count d-flex">
             <div class="owl-count-current text-primary mb-auto">1</div>
-            <div class="owl-count-all mt-auto">6</div>
+            <div class="owl-count-all mt-auto"><?= 0 ?></div>
           </div>
         </div>
         <div class="owl-carousel">
-          <?php foreach ([1, 2, 3] as $item): ?>
+          <?php foreach ([1, 2, 3, 4, 5] as $item): ?>
             <div class="item" style="background-image: url(<?= get_template_directory_uri() ?>/assets/dummy/1.png)">
               <div class="container">
                 <h1 class="title">Квартиры от 700 000 грн.</h1>
-                <div class="subtitle">ЖК Millenium</div>
+                <div class="subtitle"><?= $item ?></div>
                 <a href="#" class="btn btn-danger btn-wide d-inline-flex align-items-center">Подробнее<i class="ti ti-arrow-right"></i></a>
               </div>
             </div>

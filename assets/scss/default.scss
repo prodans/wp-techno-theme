@@ -148,14 +148,38 @@
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .section-links {
     .owl-carousel {
       .container {
         .subtitle {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .section-links {
+    .owl-nav {
+      top: 10%;
+    }
+
+    .owl-carousel {
+      .container {
+        top: 15%;
+
+        .subtitle {
           font-size: 2.5rem;
-          font-weight: bold;
-          margin-top: 1.9rem;
+        }
+
+        .btn-danger {
+          margin-top: .5rem;
+
+          i {
+            margin-left: .8rem;
+          }
         }
       }
     }
@@ -164,8 +188,24 @@
 
 @include media-breakpoint-down(sm) {
   .section-links {
-    .container {
-      padding-left: 3rem;
+    .owl-carousel {
+      .container {
+        padding-left: 3rem;
+
+        .title {
+          font-size: 1.5rem;
+        }
+
+        .subtitle {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-top: 1rem;
+        }
+
+        .btn {
+          font-size: .6rem;
+        }
+      }
     }
   }
 }

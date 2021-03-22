@@ -2,6 +2,7 @@
 @import "icons";
 @import "ti";
 @import "animations";
+@import "modal";
 @import "header";
 
 html, body {
@@ -32,6 +33,7 @@ html, body {
   }
 
   .owl-count-current {
+    min-width: 1em;
     font-size: 3rem;
     font-weight: 600;
     margin-right: 2rem;
@@ -68,5 +70,27 @@ section.content {
 @include media-breakpoint-down(md) {
   section.content {
     padding-top: $header-height / 2;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .owl-nav {
+    .owl-count-current {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    .owl-count-all {
+      font-size: 1.4rem;
+
+      &:before {
+        content: "/ ";
+      }
+    }
+
+
+    button {
+      font-size: 3.3rem;
+    }
   }
 }

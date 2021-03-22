@@ -38,7 +38,13 @@
       navText: [
         '<i class="ti ti-arrow-right ti-rotate-180 text-primary" aria-hidden="true"></i>',
         '<i class="ti ti-arrow-right text-primary" aria-hidden="true"></i>'
-      ]
+      ],
+      onChanged: function (event) {
+        const current = event.item.index - (event.relatedTarget.clones().length / 2) + 1 || event.item.count;
+
+        $('.section-links .owl-count-current').text(current);
+        $('.section-links .owl-count-all').text(event.item.count);
+      }
     });
 
     $('.section-complexes .owl-carousel').owlCarousel({
