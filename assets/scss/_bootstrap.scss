@@ -10,9 +10,14 @@
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/helpers/position";
 
 // Buttons
+.btn:focus {
+  box-shadow: none;
+}
+
 @each $value in (primary, danger) {
   .btn-#{$value} {
     color: $white;
@@ -21,10 +26,6 @@
     &:focus,
     &:active {
       color: $white;
-    }
-
-    &:focus {
-      box-shadow: none;
     }
   }
 }

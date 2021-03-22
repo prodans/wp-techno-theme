@@ -63,7 +63,9 @@ get_header();
           <a class="btn btn-danger btn-wide mx-auto">Все новости</a>
         </div>
       </div>
-      <div class="section section-contacts" data-anchor="contacts">Some section</div>
+      <div class="section section-contacts" data-anchor="contacts">
+        [FOOTER]
+      </div>
     </div>
   </section>
 <?php
