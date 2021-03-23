@@ -1,0 +1,228 @@
+@import "bootstrap/core";
+
+::-webkit-scrollbar {
+  background-color: #c1c1c1;
+  width: 0.3rem !important;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 2rem;
+}
+
+.content {
+  margin-left: 3rem;
+  height: 100%;
+
+  .links {
+    margin-top: 8rem;
+    margin-right: .05rem;
+  }
+
+  .main {
+    flex: 1;
+    overflow: auto;
+
+    .else-room {
+      margin: 5.5rem 2rem;
+
+      .header {
+        font-size: 1.8rem;
+      }
+
+      .apartments {
+        margin-top: 2.5rem;
+
+        .apartments-box {
+          padding: 1.5rem 1.4rem;
+          background-color: #fff;
+          border: .1rem solid #ced9e3;
+          font-size: .7rem;
+
+          button {
+            width: 100%;
+            margin-top: 1.5rem;
+            font-size: .7rem;
+          }
+
+          .apart-img {
+            margin-top: 1.2rem;
+            margin-bottom: 1.35rem;
+
+            img {
+              padding-left: 20%;
+            }
+          }
+
+          div:first-child {
+            margin-bottom: .5rem;
+
+            span:first-child {
+              padding-right: 1.35rem;
+              color: #f44437;
+            }
+
+            span:last-child {
+              padding-left: 1.85rem;
+            }
+          }
+        }
+      }
+    }
+
+    .options {
+      .price {
+        margin-right: 4.1rem;
+        border: 0.1rem solid #f44437;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1.15rem 4.5rem;
+
+        p {
+          font-size: .9rem;
+          margin-bottom: 0;
+        }
+
+        p:last-child {
+          color: #f44437;
+
+          span {
+            font-size: 1.8rem;
+          }
+        }
+
+      }
+
+      .area {
+        margin-left: 2.1rem;
+        border: 0.1rem solid $primary;
+        border-radius: 1rem;
+        background-color: white;
+
+        .text-center:first-child {
+          border-right: 0.2rem solid $primary;
+        }
+
+        .text-center {
+          padding: 1.15rem 2.45rem;
+
+          p {
+            margin-bottom: 0;
+          }
+
+          p:first-child {
+            font-size: .9rem;
+          }
+
+          p:last-child {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .param {
+        p {
+          margin-bottom: 0;
+        }
+
+        .about {
+          div:first-child {
+            padding-right: 1.5rem;
+            border-right: .1rem solid #000;
+            padding-top:  .5rem;
+          }
+
+          div:last-child {
+            padding-left: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .header {
+      margin-top: 2.4rem;
+
+      p {
+        font-size: 3rem;
+      }
+    }
+
+    .back {
+      cursor: pointer;
+      margin-top: 6rem;
+      margin-left: 2rem;
+
+      i {
+        margin-right: .7rem;
+        height: 90%;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: .9rem;
+      }
+    }
+
+    .room-layout {
+      margin-top: 3.5rem;
+
+      ul {
+        width: 100%;
+        font-size: .9rem;
+
+        li {
+          margin-bottom: 1.5rem;
+
+          div {
+            .text-center {
+              margin-right: 1rem;
+              width: 1.5rem;
+              height: 1.5rem;
+              background-color: #f44437;
+              color: #fff;
+              border-radius: 100%;
+            }
+          }
+        }
+      }
+
+      .photo-layout {
+        margin-left: 3.85rem;
+        margin-right: 4.55rem;
+        height: auto;
+        overflow-y: scroll;
+        width: 100%;
+
+        .photo-layout::-webkit-scrollbar {
+          background-color: #c1c1c1;
+          width: 0.3rem !important;
+          border-radius: 2rem;
+        }
+
+        .photo-layout::-webkit-scrollbar-thumb {
+          background-color: $primary;
+          border-radius: 2rem;
+        }
+
+        img {
+          background: transparent;
+        }
+      }
+
+      .plan {
+        margin-right: 4rem;
+
+        button {
+          margin-top: 1rem;
+        }
+
+        button:last-child {
+          font-size: .9rem;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+      }
+    }
+  }
+}

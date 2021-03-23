@@ -15,6 +15,10 @@ html, body {
   }
 }
 
+.btn-outline-primary:hover {
+  color: $primary !important;
+}
+
 .btn-primary {
   &:hover {
     i {

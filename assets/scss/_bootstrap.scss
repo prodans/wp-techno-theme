@@ -11,13 +11,13 @@
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/helpers/position";
 
 // Buttons
 .btn:focus {
   box-shadow: none;
 }
-
 @each $value in (primary, danger) {
   .btn-#{$value} {
     color: $white;
@@ -27,6 +27,34 @@
     &:active {
       color: $white;
     }
+  }
+
+  .btn-outline-#{$value} {
+    color: #{$value};
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #{$value};
+    }
+
+    background-color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $white;
+    }
+
+    border: .15rem solid;
+  }
+
+  .btn-outline-#{$value}:hover {
+    animation: pulse-primary 1s .1s ease infinite forwards;
+  }
+
+  .btn-outline-#{$value}:hover i {
+    animation: shake .4s ease-out;
   }
 }
 
