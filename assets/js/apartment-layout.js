@@ -1,9 +1,21 @@
 (function ($) {
   $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    const check = document.getElementById('switch');
+    const box = document.querySelector('.flip-box-inner');
+
+    check.onclick = function () {
+      if (check.checked) {
+        box.classList.add('rotate');
+      } else {
+        box.classList.remove('rotate');
+      }
+    }
+
+    $('.else-room .owl-carousel').owlCarousel({
       loop: true,
       margin: 0,
-      nav: false,
+      nav: true,
+      navContainer: '.else-room .owl-nav',
       dots: false,
       items: 4,
       autoplay: true,
@@ -14,19 +26,15 @@
         '<i class="ti ti-arrow-right ti-rotate-180 text-primary" aria-hidden="true"></i>',
         '<i class="ti ti-arrow-right text-primary" aria-hidden="true"></i>'
       ],
-      responsiveClass: true,
       responsive:{
         0: {
           items: 1,
-          nav: true,
         },
         600: {
-          items: 1
+          items: 2
         },
         1000: {
-          items: 2,
-          nav: false,
-          navContainer: '.owl-nav'
+          items: 3,
         },
         1440: {
           items: 4
@@ -35,3 +43,5 @@
     });
   });
 })(jQuery);
+
+

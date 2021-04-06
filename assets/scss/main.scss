@@ -71,6 +71,15 @@ html, body {
 .links {
   display: block;
 
+  .links-header {
+    margin-bottom: 1rem;
+    margin-left: 1.15rem;
+
+    span{
+      padding-left: 1.1rem;
+    }
+  }
+
   .sidebar {
     min-width: 20rem;
     font-size: 0.9rem;
@@ -80,9 +89,14 @@ html, body {
       height: 3rem;
       padding: 0.85rem 1.15rem;
       cursor: pointer;
+      font-weight: 600;
 
       span {
         padding-left: 1.1rem;
+      }
+
+      span:hover {
+        color: $primary;
       }
     }
   }

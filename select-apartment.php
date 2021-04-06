@@ -14,11 +14,11 @@ get_header();
 
 <section class="content d-flex flex-wrap">
     <nav class="links">
+      <div class="links-header">
+        <i class="ti ti-key text-primary"></i>
+        <span class="text-uppercase text-primary fw-bold">Подбор квартиры</span>
+      </div>
       <ul class="nav flex-column sidebar">
-        <li>
-          <i class="ti ti-key text-primary"></i>
-          <span class="text-uppercase text-primary fw-bold">Подбор квартиры</span>
-        </li>
         <li class="bg-light">
           <i class="ti ti-house text-primary"></i>
           <span>Про комплекс</span>
@@ -216,12 +216,13 @@ get_header();
         </div>
         <div class="owl-carousel">
           <img src="<?= get_template_directory_uri() ?>/assets/dummy/Photo_12.jpg" alt="">
+          <img src="<?= get_template_directory_uri() ?>/assets/dummy/Photo_12.jpg" alt="">
         </div>
       </div>
       <div class="documents">
         <p class="text-primary fw-bold text-center header-text">Документы</p>
-        <div class="block bg-light">
-          <div class="d-flex  justify-content-between">
+        <div class="box bg-light">
+          <div class="d-flex justify-content-between">
             <i class="ti ti-pdf text-primary"></i>
             <p class="fw-bold fs-4">Разрешение на выполнение строительных работ</p>
             <i class="ti ti-download text-primary pointer"></i>

@@ -14,10 +14,6 @@
 
   nav {
     margin-top: 8rem;
-
-    li {
-      font-weight: 600;
-    }
   }
 
   .main {
@@ -244,8 +240,13 @@
     }
 
     .documents {
-      .block {
+      .box:hover .ti-download {
+        animation: shake .4s ease-out;
+      }
+
+      .box {
         margin: 3rem 4.1rem 7.6rem 6rem;
+        cursor: pointer;
 
         div {
           padding: 2.6rem 3rem;
@@ -395,7 +396,7 @@
       }
 
       .documents {
-        .block {
+        .box {
           margin: 3rem 1rem;
 
           .d-flex {
@@ -436,7 +437,7 @@
       }
 
       .documents {
-        .block {
+        .box {
           div {
             padding: 2.6rem 0;
           }

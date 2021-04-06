@@ -4,6 +4,7 @@
   background-color: #c1c1c1;
   width: 0.3rem !important;
   border-radius: 2rem;
+  height: 0.3rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -23,139 +24,75 @@
   .main {
     flex: 1;
     overflow: auto;
+    padding: 5rem 2.1rem 9.35rem 2.1rem;
 
     .else-room {
-      margin: 5.5rem 2rem;
+      .owl-nav {
+        margin-left: -1rem;
+        color: initial;
+        width: 100%;
+
+        button {
+          margin: auto;
+          font-size: 2rem;
+          display: unset;
+          padding: inherit;
+        }
+
+        .apartments {
+          margin-top: 2.5rem;
+
+          .apartments-box {
+            padding: 1.5rem 1.4rem;
+            background-color: #fff;
+            border: .1rem solid #ced9e3;
+            font-size: .7rem;
+
+            button {
+              width: 100%;
+              margin-top: 1.5rem;
+              font-size: .7rem;
+            }
+
+            .apart-img {
+              margin: 1.25rem;
+            }
+
+            div:first-child {
+              span:first-child {
+                padding-right: 1.35rem;
+                color: #f44437;
+              }
+
+              span:last-child {
+                padding-left: 1.85rem;
+              }
+            }
+          }
+        }
+      }
 
       .header {
         font-size: 1.8rem;
       }
-
-      .apartments {
-        margin-top: 2.5rem;
-
-        .apartments-box {
-          padding: 1.5rem 1.4rem;
-          background-color: #fff;
-          border: .1rem solid #ced9e3;
-          font-size: .7rem;
-
-          button {
-            width: 100%;
-            margin-top: 1.5rem;
-            font-size: .7rem;
-          }
-
-          .apart-img {
-            margin-top: 1.2rem;
-            margin-bottom: 1.35rem;
-
-            img {
-              padding-left: 20%;
-            }
-          }
-
-          div:first-child {
-            margin-bottom: .5rem;
-
-            span:first-child {
-              padding-right: 1.35rem;
-              color: #f44437;
-            }
-
-            span:last-child {
-              padding-left: 1.85rem;
-            }
-          }
-        }
-      }
-    }
-
-    .options {
-      .price {
-        margin-right: 4.1rem;
-        border: 0.1rem solid #f44437;
-        background-color: white;
-        border-radius: 1rem;
-        padding: 1.15rem 4.5rem;
-
-        p {
-          font-size: .9rem;
-          margin-bottom: 0;
-        }
-
-        p:last-child {
-          color: #f44437;
-
-          span {
-            font-size: 1.8rem;
-          }
-        }
-
-      }
-
-      .area {
-        margin-left: 2.1rem;
-        border: 0.1rem solid $primary;
-        border-radius: 1rem;
-        background-color: white;
-
-        .text-center:first-child {
-          border-right: 0.2rem solid $primary;
-        }
-
-        .text-center {
-          padding: 1.15rem 2.45rem;
-
-          p {
-            margin-bottom: 0;
-          }
-
-          p:first-child {
-            font-size: .9rem;
-          }
-
-          p:last-child {
-            font-size: 2rem;
-          }
-        }
-      }
-
-      .param {
-        p {
-          margin-bottom: 0;
-        }
-
-        .about {
-          div:first-child {
-            padding-right: 1.5rem;
-            border-right: .1rem solid #000;
-            padding-top:  .5rem;
-          }
-
-          div:last-child {
-            padding-left: 1.5rem;
-          }
-        }
-      }
     }
 
     .header {
-      margin-top: 2.4rem;
-
       p {
         font-size: 3rem;
       }
     }
 
+    .back:hover {
+      color: $primary;
+    }
+
     .back {
       cursor: pointer;
-      margin-top: 6rem;
-      margin-left: 2rem;
+      align-items: center;
 
       i {
         margin-right: .7rem;
-        height: 90%;
       }
 
       p {
@@ -164,63 +101,427 @@
       }
     }
 
-    .room-layout {
-      margin-top: 3.5rem;
+    .detail-plan {
+      margin-bottom: 5.6rem;
 
-      ul {
-        width: 100%;
-        font-size: .9rem;
+      .options {
+        .area {
+          border: 0.1rem solid $primary;
+          border-radius: 1rem;
+          background-color: white;
+          margin-bottom: 3.5rem;
 
-        li {
-          margin-bottom: 1.5rem;
+          .text-center:first-child {
+            border-right: 0.2rem solid $primary;
+          }
 
-          div {
-            .text-center {
-              margin-right: 1rem;
-              width: 1.5rem;
-              height: 1.5rem;
-              background-color: #f44437;
-              color: #fff;
-              border-radius: 100%;
+          .text-center {
+            padding: 1.15rem 2.45rem;
+
+            p {
+              margin-bottom: 0;
+            }
+
+            p:first-child {
+              font-size: .9rem;
+            }
+
+            p:last-child {
+              font-size: 2rem;
+            }
+          }
+        }
+
+        ul {
+          width: 100%;
+          font-size: .9rem;
+          padding-left: 1rem;
+          padding-right: 1.5rem;
+
+          li {
+            margin-bottom: 1.5rem;
+
+            div {
+              .text-center {
+                margin-right: 1rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: #f44437;
+                color: #fff;
+                border-radius: 100%;
+              }
+            }
+          }
+        }
+
+      }
+
+      .room-layout {
+        margin-left: 1.4rem;
+
+        .photo-layout {
+          height: auto;
+          max-height: 40rem;
+          overflow-y: scroll;
+          width: 100%;
+
+          img {
+            background: transparent;
+          }
+
+          .flip-box {
+            background-color: transparent;
+            width: 20rem;
+            height: 30rem;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            margin-right: 2.5rem;
+            padding: 2rem 0;
+          }
+
+          .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+
+          .rotate{
+            transform: rotateY(180deg);
+          }
+
+          .flip-box-front, .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+
+          .flip-box-front {
+            background-color: transparent;
+          }
+
+          .flip-box-back {
+            background-color: transparent;
+            transform: rotateY(180deg);
+          }
+        }
+
+        .param {
+          margin-bottom: 2.5rem;
+
+          p {
+            margin-bottom: 0;
+          }
+
+          .switch {
+            .form-check-input:focus {
+              border-color: $primary;
+              box-shadow: none;
+            }
+
+            .form-switch .form-check-input:checked {
+              background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23379df4'/%3e%3c/svg%3e");
+              background-position: right center;
+            }
+
+            .form-switch .form-check-input {
+              background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23379df4'/%3e%3c/svg%3e");
+              border: .1rem solid $primary;
+              background-color: inherit;
+              width: 4rem;
+              height: 2rem;
+              cursor: pointer;
+            }
+
+            .form-check {
+              width: 9rem;
+
+              .form-check-label {
+                top: 0.4rem;
+              }
+
+              .form-check-label:first-child {
+                left: 0;
+              }
+
+              input {
+                left: 5rem;
+              }
+
+              .form-check-label:last-child {
+                right: 0;
+              }
+            }
+          }
+
+          .about {
+            margin-bottom: 2rem;
+
+            div:first-child {
+              padding-right: 1.5rem;
+              border-right: .1rem solid #000;
+              padding-top: .5rem;
+            }
+
+            div:last-child {
+              padding-left: 1.5rem;
             }
           }
         }
       }
 
-      .photo-layout {
-        margin-left: 3.85rem;
-        margin-right: 4.55rem;
-        height: auto;
-        overflow-y: scroll;
-        width: 100%;
+      .general {
+        .plan {
+          margin-left: 1.85rem;
 
-        .photo-layout::-webkit-scrollbar {
-          background-color: #c1c1c1;
-          width: 0.3rem !important;
-          border-radius: 2rem;
+          .buttons {
+            margin-top: 1rem;
+
+            button {
+              margin-bottom: 1rem;
+              width: 15rem;
+              font-size: 0.6rem;
+            }
+          }
         }
 
-        .photo-layout::-webkit-scrollbar-thumb {
-          background-color: $primary;
-          border-radius: 2rem;
+        .price {
+          border: 0.1rem solid #f44437;
+          background-color: white;
+          border-radius: 1rem;
+          padding: 1.15rem 4.5rem;
+          margin-bottom: 4rem;
+
+          p {
+            font-size: .9rem;
+            margin-bottom: 0;
+          }
+
+          p:last-child {
+            color: #f44437;
+
+            span {
+              font-size: 1.8rem;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-down(xxl) {
+  .content {
+    margin-left: 0;
+
+    .links {
+      display: none;
+    }
+
+    .main {
+      .detail-plan {
+        .room-layout {
+          .photo-layout img {
+            margin-right: 0;
+          }
+
+          .param {
+            .form-check {
+              .form-check-label:last-child {
+                right: 6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .content {
+    .main {
+      .detail-plan {
+        margin-bottom: 1rem;
+
+        .room-layout {
+          width: 100%;
+          margin-bottom: 4rem;
+
+          .param {
+            .form-check {
+              input {
+                left: 16rem;
+              }
+
+              .form-check-label:first-child {
+                left: 11rem;
+              }
+
+              .form-check-label:last-child {
+                right: 12rem;
+              }
+            }
+          }
         }
 
-        img {
-          background: transparent;
+        .options {
+          width: 100%;
+          margin-bottom: 4rem;
+        }
+
+        .general {
+          width: 100%;
+          margin-bottom: 4rem;
+
+          .plan {
+            .buttons {
+              button {
+                margin-bottom: 1rem;
+                width: 100%;
+                font-size: .6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .content {
+    .main {
+      .header {
+        p {
+          font-size: 2.4rem;
         }
       }
 
-      .plan {
-        margin-right: 4rem;
-
-        button {
-          margin-top: 1rem;
+      .else-room {
+        .header {
+          margin-bottom: 1rem;
         }
 
-        button:last-child {
-          font-size: .9rem;
-          padding-left: 1.5rem;
-          padding-right: 1.5rem;
+        .owl-nav {
+          flex-wrap: wrap;
+          margin: 0;
+          justify-content: center;
+
+          .owl-next {
+            order: -1;
+          }
+
+          .owl-prev {
+            order: -2;
+          }
+
+          .apartments {
+            flex: 1;
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      .detail-plan {
+        .options {
+          .area {
+            .text-center {
+              padding: 0.6rem;
+            }
+          }
+
+          ul {
+            padding: 0;
+          }
+        }
+
+        .room-layout {
+          .param {
+            .form-check {
+              input {
+                left: 8.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .content {
+    .main {
+      padding: 1rem;
+
+      .header {
+        p {
+          font-size: 1.6rem;
+        }
+      }
+
+      .back {
+        p {
+          font-size: .8rem;
+        }
+      }
+
+      .detail-plan {
+        .options {
+          ul {
+            font-size: .8rem
+          }
+
+          .area {
+            .text-center {
+              padding: 0.6rem;
+
+              p:last-child {
+                font-size: 1.5rem;
+              }
+            }
+          }
+
+          ul {
+            padding: 0;
+          }
+        }
+
+        .room-layout {
+          margin-left: 0;
+
+          .param {
+            .form-check {
+              input {
+                left: 8.5rem;
+              }
+            }
+          }
+        }
+
+        .general {
+          .price {
+            padding: 1.15rem;
+          }
+
+          .plan {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .else-room {
+        .header {
+          font-size: 1.4rem;
         }
       }
     }
