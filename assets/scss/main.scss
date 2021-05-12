@@ -9,6 +9,34 @@ html, body {
   height: 100%;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  background-color: #c1c1c1;
+  width: 0.3rem !important;
+  border-radius: 2rem;
+  height: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 2rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 @each $key, $value in (primary: $primary, danger: $danger) {
   .btn-#{$key}:hover {
     animation: pulse-#{$key} 1s .1s ease infinite forwards;
@@ -75,7 +103,7 @@ html, body {
     margin-bottom: 1rem;
     margin-left: 1.15rem;
 
-    span{
+    span {
       padding-left: 1.1rem;
     }
   }
@@ -91,6 +119,11 @@ html, body {
       cursor: pointer;
       font-weight: 600;
 
+      a {
+        color: initial;
+        text-decoration: none;
+      }
+
       span {
         padding-left: 1.1rem;
       }
@@ -102,14 +135,50 @@ html, body {
   }
 }
 
+.apartments-box {
+  padding: 1.5rem 1.4rem;
+  background-color: #fff;
+  border: .1rem solid $light-blue;
+  font-size: .7rem;
 
+  .apart-img {
+    margin: 1.25rem;
+  }
 
+  .params {
+    div:first-child {
+      span:first-child {
+        color: $danger;
+      }
+    }
 
+    div:last-child {
+      text-align: right;
+    }
+  }
 
+  .price {
+    margin-bottom: 1rem;
+  }
 
+  .detail {
+    display: inline-block;
+    padding: 1em 2.8em;
+    border: .15rem solid;
+    width: 100%;
+    margin-top: 1.5rem;
+    font-size: .7rem;
+  }
+}
 
 section.content {
   padding-top: $header-height;
+}
+
+@include media-breakpoint-down(xxl) {
+  .links {
+    display: none;
+  }
 }
 
 @include media-breakpoint-down(md) {

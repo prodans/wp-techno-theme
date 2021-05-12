@@ -1,0 +1,391 @@
+@import "bootstrap/core";
+
+.content {
+  margin-left: 3rem;
+  height: 100%;
+
+
+  nav {
+    margin-top: 8rem;
+    margin-right: .05rem;
+  }
+
+  .main {
+    flex: 1;
+    overflow: auto;
+    height: 100%;
+    padding: 12.8rem 10rem;
+
+    .img {
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      left: 0;
+    }
+
+    .layout {
+      .filters {
+        background-color: $white;
+        padding: 1.8rem 2rem;
+        border: .1rem solid $light-blue;
+        font-size: 0.8rem;
+        font-weight:  600;
+        margin-bottom: 2.1rem;
+
+        .hide-filters {
+          top: 0.6rem;
+          right: 1rem;
+          padding: 0;
+        }
+
+        .hide-filters:hover {
+          color: $primary;
+        }
+
+        .hide-filters:active {
+          color: tint-color($primary, 0.7);
+        }
+
+        .reset-filters {
+          right: 2rem;
+          bottom: -1rem;
+          font-size: 0.6rem;
+          padding: 0.4rem 1.4rem;
+          cursor: pointer;
+          border: .1rem solid $light-blue;
+
+          span:first-child {
+            font-size: 1rem;
+            position: absolute;
+            top: 0.1rem;
+            left: 0.6rem;
+          }
+        }
+
+        .reset-filters:hover {
+          filter: brightness(90%);
+        }
+
+        .reset-filters:active {
+          filter: brightness(80%);
+        }
+
+        .number-room {
+          margin-right: 2.2rem;
+
+          .buttons {
+            margin-top: 1rem;
+
+            .btn-check:checked+.btns {
+              background-color: $gray-400;
+            }
+
+            .btns:hover {
+              background-color: $gray-200;
+            }
+
+            .btns {
+              font-weight: 600;
+              width: 1.3rem;
+              height: 1.4rem;
+              background-color: transparent;
+              border: 0.1rem solid $black;
+              margin-right: 0.5rem;
+              text-align: center;
+            }
+          }
+        }
+
+        .forms {
+          margin-right: 2.2rem;
+
+          .form-group {
+            margin-top: 1rem;
+
+            .form-control-slider {
+              width: 12rem;
+            }
+
+            .noUi-target {
+              background-color: $light-blue;
+              border: none;
+              height: 0.15rem;
+            }
+
+            .noUi-connect {
+              background-color: $primary;
+            }
+
+            .noUi-handle {
+              background-color: $primary;
+              filter: brightness(130%);
+              box-shadow: none;
+              width: 0.65rem;
+              height: 0.65rem;
+              border: none;
+              cursor: pointer;
+            }
+
+            .noUi-handle:after, .noUi-handle:before {
+              height: 0.35rem;
+              width: 0.05rem;
+              background: $white;
+              top: 0.15rem;
+            }
+
+            .noUi-handle:after {
+              left: 0.4rem;
+            }
+
+            .noUi-handle:before {
+              left: 0.2rem;
+            }
+
+            .noUi-touch-area:focus, .noUi-handle:focus {
+              outline: none;
+            }
+
+            .noUi-handle:hover {
+              filter: brightness(120%);
+            }
+
+            .noUi-horizontal .noUi-handle {
+              right: -0.5rem;
+            }
+
+            .filters-inputs {
+              margin-top: 0.7rem;
+
+              .form-control-label {
+                span {
+                  font-size: 0.6rem;
+                }
+
+                .form-control-input {
+                  width: auto;
+                  text-align: center;
+                  border: none;
+                  font-weight: 600;
+                  font-size: 0.6rem;
+                  border-bottom: 1px solid $primary;
+                }
+
+                .form-control-input:focus {
+                  outline: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .box {
+        .box-filters {
+          font-size: 0.6rem;
+          margin-bottom: 1.9rem;
+          font-weight: 600;
+
+          .box-filter-area:hover, .box-filter-price:hover {
+            color: $primary;
+          }
+
+          .box-filter-area:active, .box-filter-price:active {
+            filter: brightness(80%);
+          }
+
+          .btns-radio {
+            font-size: 0.6rem;
+            border: 0.1rem solid $dark;
+            border-radius: 1rem;
+            padding: 0.2rem 1rem;
+          }
+
+          .btn-check:checked:active+.btns-radio {
+            background-color: $danger;
+            filter: brightness(90%);
+          }
+
+          .btns-radio:hover {
+            background-color: #f8f9fa;
+            filter: brightness(90%);
+          }
+
+          .btns-radio:not(:last-child) {
+            margin-right: 1rem;
+          }
+
+          .btn-check:checked+.btns-radio {
+            background-color: $danger;
+            color: $white;
+            border: 0.1rem solid $danger;
+          }
+
+          .ti-bars:before, .ti-th:before {
+            margin: 0.15rem 0.2rem 0 0;
+          }
+
+          div:first-child {
+            margin-right: 1.9rem;
+          }
+
+          div {
+            cursor: pointer;
+
+            span {
+              margin-right: 0.4rem;
+            }
+          }
+        }
+
+        .box-card {
+          grid-template-columns: repeat(3, 1fr);
+
+          .price {
+            button {
+              border: 0.09rem solid;
+              padding: 0.1rem 0.4rem;
+              font-size: 0.5rem;
+            }
+          }
+        }
+
+        .box-list {
+          .apartments-box {
+            display: flex;
+
+            .detail {
+              margin: auto;
+            }
+
+            .apart-img {
+              margin: 0;
+              order: -1;
+
+              img {
+                height: 200px;
+              }
+            }
+
+            .params, .price {
+              flex-grow: 4;
+            }
+
+            .price {
+            }
+
+            .params {
+
+              div:first-child {
+                margin-bottom: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .content {
+    margin-left: 0;
+
+    .main {
+      padding: 7rem 6rem;
+
+      .layout {
+        .filters {
+          flex-wrap: wrap;
+
+          .number-room, .forms {
+            margin-bottom: 3rem;
+          }
+        }
+        .box {
+          .box-card {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .content {
+    .main {
+      padding: 7rem 3rem;
+
+      .layout {
+        .box {
+          .box-card {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        .filters {
+          padding: 1.8rem 1rem;
+
+          .forms {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .content {
+    .main {
+      padding: 2rem 0.8rem;
+
+      .layout {
+        .box {
+          .box-filters {
+            flex-direction: column;
+            margin-left: 1rem;
+          }
+
+          .d-flex:first-child {
+            margin-bottom: 1rem;
+          }
+        }
+
+        .filters {
+          padding: 1.8rem 3rem;
+
+          .reset-filters {
+            right: 5rem;
+          }
+
+          .number-room, .forms {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    .main {
+      .layout {
+        .filters {
+          padding: 1.8rem 1rem;
+        }
+
+        .box {
+          .box-card {
+            .apartments-box {
+              padding: 1.5rem 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

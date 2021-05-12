@@ -20,28 +20,40 @@ get_header();
       </div>
       <ul class="nav flex-column sidebar">
         <li class="bg-light">
-          <i class="ti ti-house text-primary"></i>
-          <span>Про комплекс</span>
+          <a href="#about-complex">
+            <i class="ti ti-house text-primary"></i>
+            <span>Про комплекс</span>
+          </a>
         </li>
         <li class="bg-light">
-          <i class="ti ti-room text-primary"></i>
-          <span>Планировка</span>
+          <a href="#apartment-layout">
+            <i class="ti ti-room text-primary"></i>
+            <span>Планировка</span>
+          </a>
         </li>
         <li class="bg-light">
-          <i class="ti ti-bus text-primary"></i>
-          <span>Инфраструктура</span>
+          <a href="#infrastructure">
+            <i class="ti ti-bus text-primary"></i>
+            <span>Инфраструктура</span>
+          </a>
         </li>
         <li class="bg-light">
-          <i class="ti ti-crane text-primary"></i>
-          <span>Ход строительства</span>
+          <a href="#construction-progress">
+            <i class="ti ti-crane text-primary"></i>
+            <span>Ход строительства</span>
+          </a>
         </li>
         <li class="bg-light">
-          <i class="ti ti-image text-primary"></i>
-          <span>Галерея</span>
+          <a href="#gallery">
+            <i class="ti ti-image text-primary"></i>
+            <span>Галерея</span>
+          </a>
         </li>
         <li class="bg-light">
-          <i class="ti ti-doc text-primary"></i>
-          <span>Документы</span>
+          <a href="#documents">
+            <i class="ti ti-doc text-primary"></i>
+            <span>Документы</span>
+          </a>
         </li>
       </ul>
     </nav>
@@ -75,7 +87,7 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="about-complex d-flex flex-wrap">
+      <div id="about-complex" class="about-complex d-flex flex-wrap">
         <div class="photo-complex">
           <img src="<?= get_template_directory_uri() ?>/assets/dummy/ph1.jpg)" alt="">
           <img src="<?= get_template_directory_uri() ?>/assets/dummy/ph21.jpg)" alt="">
@@ -94,7 +106,7 @@ get_header();
           </p>
         </div>
       </div>
-      <div class="constr-techno">
+      <div id="constr-techno" class="constr-techno">
         <p class="text-primary fw-bold text-center header-text">Технологии строительства</p>
         <div class="d-flex flex-wrap w-100">
           <div>
@@ -160,7 +172,7 @@ get_header();
             <img src="<?= get_template_directory_uri() ?>/assets/dummy/constr-techno/ph12.jpg)" alt=""></div>
         </div>
       </div>
-      <div class="apartment-layout">
+      <div id="apartment-layout" class="apartment-layout">
         <div class="fw-bold">
           <p>Выберите этаж</p>
         </div>
@@ -169,10 +181,10 @@ get_header();
         </div>
         <button class="btn btn-danger">Подбор по параметрам</button>
       </div>
-      <div class="infrastructure">
+      <div id="infrastructure" class="infrastructure">
 
       </div>
-      <div class="construction-progress">
+      <div id="construction-progress" class="construction-progress">
         <div class="m-auto text-primary fw-bold header-text text-center">
           <p>Ход строительства</p>
         </div>
@@ -207,7 +219,7 @@ get_header();
           <div class="owl-dots d-flex align-items-center"></div>
         </div>
       </div>
-      <div class="gallery position-relative">
+      <div id="gallery" class="gallery position-relative">
         <div class="owl-nav d-flex container">
           <div class="owl-count d-flex">
             <div class="owl-count-current text-primary mb-auto">1</div>
@@ -219,7 +231,7 @@ get_header();
           <img src="<?= get_template_directory_uri() ?>/assets/dummy/Photo_12.jpg" alt="">
         </div>
       </div>
-      <div class="documents">
+      <div id="documents" class="documents">
         <p class="text-primary fw-bold text-center header-text">Документы</p>
         <div class="box bg-light">
           <div class="d-flex justify-content-between">

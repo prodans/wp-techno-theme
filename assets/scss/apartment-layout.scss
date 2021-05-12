@@ -1,17 +1,5 @@
 @import "bootstrap/core";
 
-::-webkit-scrollbar {
-  background-color: #c1c1c1;
-  width: 0.3rem !important;
-  border-radius: 2rem;
-  height: 0.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: $primary;
-  border-radius: 2rem;
-}
-
 .content {
   margin-left: 3rem;
   height: 100%;
@@ -28,47 +16,31 @@
 
     .else-room {
       .owl-nav {
-        margin-left: -1rem;
+        margin-left: -1.4rem;
         color: initial;
         width: 100%;
 
-        button {
+        .owl-next, .owl-prev {
           margin: auto;
           font-size: 2rem;
           display: unset;
           padding: inherit;
         }
 
+        .owl-next {
+          margin-left: 0.2rem;
+        }
+
+        .owl-prev {
+          margin-right: 0.2rem;
+        }
+
+        .owl-next:hover, .owl-prev:hover {
+          filter: brightness(90%);
+        }
+
         .apartments {
           margin-top: 2.5rem;
-
-          .apartments-box {
-            padding: 1.5rem 1.4rem;
-            background-color: #fff;
-            border: .1rem solid #ced9e3;
-            font-size: .7rem;
-
-            button {
-              width: 100%;
-              margin-top: 1.5rem;
-              font-size: .7rem;
-            }
-
-            .apart-img {
-              margin: 1.25rem;
-            }
-
-            div:first-child {
-              span:first-child {
-                padding-right: 1.35rem;
-                color: #f44437;
-              }
-
-              span:last-child {
-                padding-left: 1.85rem;
-              }
-            }
-          }
         }
       }
 
@@ -108,7 +80,7 @@
         .area {
           border: 0.1rem solid $primary;
           border-radius: 1rem;
-          background-color: white;
+          background-color: $white;
           margin-bottom: 3.5rem;
 
           .text-center:first-child {
@@ -146,8 +118,8 @@
                 margin-right: 1rem;
                 width: 1.5rem;
                 height: 1.5rem;
-                background-color: #f44437;
-                color: #fff;
+                background-color: $danger;
+                color: $white;
                 border-radius: 100%;
               }
             }
@@ -291,7 +263,7 @@
 
         .price {
           border: 0.1rem solid #f44437;
-          background-color: white;
+          background-color: $white;
           border-radius: 1rem;
           padding: 1.15rem 4.5rem;
           margin-bottom: 4rem;
@@ -302,7 +274,7 @@
           }
 
           p:last-child {
-            color: #f44437;
+            color: $danger;
 
             span {
               font-size: 1.8rem;
@@ -319,10 +291,6 @@
 @include media-breakpoint-down(xxl) {
   .content {
     margin-left: 0;
-
-    .links {
-      display: none;
-    }
 
     .main {
       .detail-plan {
@@ -416,6 +384,7 @@
 
           .owl-next {
             order: -1;
+            margin-left: auto;
           }
 
           .owl-prev {

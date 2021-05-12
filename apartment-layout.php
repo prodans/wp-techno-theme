@@ -156,20 +156,24 @@ get_header();
         <div class="owl-nav d-flex">
           <div class="owl-carousel apartments">
             <div class="apartments-box">
-              <div class="d-flex justify-content-between">
-                <span class="fw-bold">№78</span>
-                <span>3-комн.</span>
-                <span>ЖК “Millenium”</span>
-              </div>
-              <div class="d-flex justify-content-between">
-                <span class="fw-bold" style="font-size: 0.8rem">93.72 м<sup>2</sup></span>
-                <span>8 этаж</span>
+              <div class="params d-flex justify-content-between">
+                <div class="d-flex flex-column">
+                  <span class="fw-bold">№78</span>
+                  <span class="fw-bold" style="font-size: 0.8rem">93.72 м<sup>2</sup></span>
+                </div>
+                <div class="d-flex flex-column">
+                  <span>3-комн.</span>
+                </div>
+                <div class="d-flex flex-column">
+                  <span>ЖК “Millenium”</span>
+                  <span>8 этаж</span>
+                </div>
               </div>
               <div class="apart-img">
                 <img src="<?= get_template_directory_uri() ?>/assets/dummy/5.jpg" alt="">
               </div>
-              <div class="fw-bold" style="font-size: 1rem">954 680 грн.</div>
-              <button class="btn btn-wide btn-outline-primary text-uppercase">Подробнее</button>
+              <div class="fw-bold price" style="font-size: 1rem">954 680 грн.</div>
+              <button class="btn btn-outline-primary text-uppercase detail">Подробнее</button>
             </div>
           </div>
         </div>
